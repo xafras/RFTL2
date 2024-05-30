@@ -133,7 +133,6 @@ def generate_structure():
     os.makedirs(VPOS_PATH, True)
     os.makedirs(VNEG_PATH, True)
     os.makedirs(VANC_PATH, True)
-    os.makedirs(TCP_PATH, True)
     os.makedirs(SVM_PATH, True)
     os.makedirs(SAVED_MODEL_PATH, True)
     print("[DEBUG] Folder structure generated")
@@ -144,6 +143,7 @@ def generate_structure():
 
 
 def setup_data():
+    #   TODO implement automatic database download
     if os.path.exists(LFW_LOCK):
         print("[DEBUG] Data already imported")
         return None
