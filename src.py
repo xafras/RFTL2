@@ -49,6 +49,7 @@ import cv2
 import uuid
 import tqdm
 import shutil
+import time
 
 import numpy as np
 from matplotlib import pyplot as plt
@@ -209,6 +210,7 @@ def start_video_capture(camera_index=0, awaited_capture=100):
 
         if cv2.waitKey(1) & 0XFF == ord('a'):
             print("A key pressed : Anchor collected")
+            time.sleep(2)
             imgname = os.path.join(ANC_PATH, f"{uuid.uuid1()}.jpg")
             counter += 1
             cv2.imwrite(imgname, frame)
@@ -519,3 +521,4 @@ def verify(model, anc_path = ANC_PATH, ver_path = VER_PATH, max_data_size=100):
     test_input, test_val, _ = data.as_numpy_iterator().next()
     results = model.predict([test_input, test_val])
     return results
+
