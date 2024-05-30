@@ -93,8 +93,8 @@ def plot_images_b2b(img1, img2, title1=None, title2=None):
     fig, (ax1, ax2) = plt.subplots(1, 2)
     ax1.imshow(img1)
     ax2.imshow(img2)
-    ax1.suptitle(title1) if title1 != None else None
-    ax1.suptitle(title2) if title2 != None else None
+    ax1.set_title(title1) if title1 != None else None
+    ax2.set_title(title2) if title2 != None else None
     plt.show()
 
 
@@ -500,28 +500,6 @@ def plot(loss, recall, precision):
     plt.plot(N, precision, label='precision')
     plt.show()
 
-
-###################################################################################################
-#   MACHINE LEARNING TRANSFER LEARNING
-
-# def transfer_learning_demo():
-#     # empty_folder(ANC_PATH)
-#     # empty_folder(POS_PATH)
-#     start_video_capture()
-#     data_augment_from_folder(ANC_PATH, POS_PATH,)
-#     data = harvest_from_folder(
-#         anc_path=ANC_PATH, pos_path=POS_PATH, neg_path=NEG_PATH, n_harvest=10)
-#     train_data, test_data = build_dataloader_pipeline(data)
-
-#     embedding_pretrained = make_embedding_from_pretrained('embedding_kernel')
-#     siamese_model = make_siamese_model(embedding_pretrained)
-#     print(
-#         f"Successfully created siamese model from pretrained kernel.")
-#     train_step, checkpoint = define_train_step(siamese_model)
-#     train = define_training_loop(siamese_model, train_step, checkpoint)
-#     print(f"Begining model fitting on user data.")
-#     train(train_data, n_epoch=10)
-#     save_model(siamese_model, file_name='transfered_siamese')
 
 ###################################################################################################
 #   MACHINE LEARNING PREDICTION
