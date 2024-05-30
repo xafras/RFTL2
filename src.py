@@ -241,6 +241,9 @@ def preprocess(file_path):
 def preprocess_twin(input_img, validation_img, label):
     return (preprocess(input_img), preprocess(validation_img), label)
 
+def preprocess_twin_verify(input_img, validation_img):
+    return (preprocess(input_img), preprocess(validation_img))
+
 
 def harvest_from_folder(anc_path=ANC_PATH, pos_path=POS_PATH, neg_path=NEG_PATH, n_harvest=None):
     print(
@@ -519,3 +522,22 @@ def plot(loss, recall, precision):
 #     print(f"Begining model fitting on user data.")
 #     train(train_data, n_epoch=10)
 #     save_model(siamese_model, file_name='transfered_siamese')
+
+###################################################################################################
+#   MACHINE LEARNING PREDICTION
+
+def verify(model, anc_path = ANC_PATH, ver_path = VER_PATH, max_data_size=100):
+    data_number = min(len(os.listdir(ANC_PATH)), len(os.listdir(VER_PATH)))
+    anchor_file_paths = tf.data.Dataset.list_files(anc_path+'\*.jpg').take(data_number)
+    verify_file_paths = tf.data.Dataset.list_files(ver_path+'\*.jpg').take(data_number)
+    print(f"Verifying {data_number} data.")
+    data = tf.data.Dataset.zip((anchor_file_paths, verify_file_paths, tf.data.Dataset.from_tensor_slices(tf.ones(len(anchor_file_paths)))))
+    data = data.map(preprocess_twin)
+    data = data.cache()
+    data = data.shuffle(buffer_size=10000)
+    data = data.take(max_data_size)
+    data = data.batch(16)
+    data = data.prefetch(8)
+    test_input, test_val, _ = data.as_numpy_iterator().next()
+    results = model.predict([test_input, test_val])
+    return results
