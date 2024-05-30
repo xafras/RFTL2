@@ -507,7 +507,7 @@ def plot(loss, recall, precision):
 #   MACHINE LEARNING PREDICTION
 
 def verify(model, anc_path = ANC_PATH, ver_path = VER_PATH, max_data_size=100):
-    data_number = min(len(os.listdir(ANC_PATH)), len(os.listdir(VER_PATH)))
+    data_number = min(len(os.listdir(anc_path)), len(os.listdir(ver_path)))
     anchor_file_paths = tf.data.Dataset.list_files(anc_path+'\*.jpg').take(data_number)
     verify_file_paths = tf.data.Dataset.list_files(ver_path+'\*.jpg').take(data_number)
     print(f"Verifying {data_number} data.")
