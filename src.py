@@ -550,7 +550,7 @@ def verify(model, ver_file_path, anc_path = ANC_PATH, max_data_size=100, verbose
     return np.quantile(results, 0.75)
 
 
-def get_histogram_scores(model, anc_path = BANC_PATH, pos_path = BPOS_PATH, neg_path = NEG_PATH, max_harvest = 530, n_bins = 50, force_computation=False):
+def get_histogram_scores(model, anc_path = BANC_PATH, pos_path = BPOS_PATH, neg_path = NEG_PATH, max_harvest = 530, n_bins = 30, force_computation=False, data_path=r'gross_scores_naive.npz', xmin=0, xmax=1, ymin=0, ymax=1):
     if force_computation:
         gross_scores_positive = []
         
@@ -564,15 +564,40 @@ def get_histogram_scores(model, anc_path = BANC_PATH, pos_path = BPOS_PATH, neg_
             img_path = os.path.join(neg_path, file_name)
             gross_scores_negative.append(verify(model, img_path, anc_path, max_data_size=max_harvest, verbose=False))
 
-        np.savez(r'gross_scores.npz', x=gross_scores_positive, y=gross_scores_negative)
+        np.savez(data_path, x=gross_scores_positive, y=gross_scores_negative)
     else:
-        npzfile = np.load(r'gross_scores.npz')
+        npzfile = np.load(data_path)
 
         gross_scores_positive=npzfile['x']
         gross_scores_negative=npzfile['y']
 
-    fig, axs = plt.subplots(2, 1, sharex=True, tight_layout=True)
-    axs[0].hist(gross_scores_positive, bins=n_bins)
-    axs[1].hist(gross_scores_negative, bins=n_bins)
+    fig, axs = plt.subplots(2, 1, sharex=True, tight_layout=True, dpi = 100)
+    
+    axs[1].set_xlabel('gross score')
+
+    axs[0].hist(gross_scores_positive, bins=n_bins, zorder=20, label="positive samples", color='tab:green')
+    axs[1].hist(gross_scores_negative, bins=n_bins, zorder=20, label="negative samples", color='tab:orange')
+
+    for ax,score in [(axs[0], gross_scores_positive), (axs[1], gross_scores_negative)]:
+        q1, q2, q3 = np.quantile(score, 0.25), np.median(score), np.quantile(score, 0.75)
+        if (ax==axs[0]):
+            ax.plot([q1, q1], [ymin, 2*ymax], label="q1", linestyle='dotted', zorder=100, color='tab:olive')
+            ax.plot([q2, q2], [ymin, 2*ymax], label="q2", linestyle='dotted', zorder=100, color='tab:orange')
+            ax.plot([q3, q3], [ymin, 2*ymax], label="q3", linestyle='dotted', zorder=100, color='tab:red')
+        else:
+            ax.plot([q1, q1], [ymin, 2*ymax], label="q1", linestyle='dotted', zorder=100, color='tab:cyan')
+            ax.plot([q2, q2], [ymin, 2*ymax], label="q2", linestyle='dotted', zorder=100, color='tab:blue')
+            ax.plot([q3, q3], [ymin, 2*ymax], label="q3", linestyle='dotted', zorder=100, color='tab:purple')
+
+        ax.set_ylabel('number of sample')
+        ax.set_xlim([xmin, xmax])
+        ax.set_ylim([ymin, ymax])
+        ax.grid(which='minor', color='#EEEEEE', linestyle=':', linewidth=0.5)
+        ax.grid(which='major', color='#DDDDDD', linewidth=0.8)
+        ax.minorticks_on()
+        ax.legend(loc='upper left')
+        ax.set_ylabel('number of sample')
+    
     plt.show()
+
     return gross_scores_positive, gross_scores_negative
