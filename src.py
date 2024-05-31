@@ -408,8 +408,7 @@ def make_siamese_model(embedding_model):
     # Combine siamese distance components
     siamese_layer = L1Dist()
     siamese_layer._name = 'distance'
-    distances = siamese_layer(embedding_model(
-        input_image), embedding_model(validation_image))
+    distances = siamese_layer(embedding_model(input_image), embedding_model(validation_image))
 
     # Classification layer
     classifier = Dense(1, activation='sigmoid')(distances)
@@ -539,4 +538,4 @@ def verify(model, ver_file_path, anc_path = ANC_PATH, max_data_size=100):
     test_input, test_val, _ = data.as_numpy_iterator().next()
     results = model.predict([test_input, test_val])
     return np.quantile(results, 0.75)
-    
+
