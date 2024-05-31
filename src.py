@@ -550,7 +550,7 @@ def verify(model, ver_file_path, anc_path = ANC_PATH, max_data_size=100, verbose
     return np.quantile(results, 0.75)
 
 
-def get_histogram_scores(model, anc_path = BANC_PATH, pos_path = BPOS_PATH, neg_path = NEG_PATH, max_harvest = 530, n_bins = 30, force_computation=False, data_path=r'gross_scores_naive.npz', xmin=0, xmax=1, ymin=0, ymax=1):
+def get_histogram_scores(model, anc_path = BANC_PATH, pos_path = BPOS_PATH, neg_path = NEG_PATH, max_harvest = 530, n_bins = 30, force_computation=False, data_path=r'gross_scores_naive.npz', xmin=0, xmax=1, ymin=0, ymax=5):
     if force_computation:
         gross_scores_positive = []
         
