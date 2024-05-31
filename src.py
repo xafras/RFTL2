@@ -72,6 +72,8 @@ VPOS_PATH = os.path.join('data', 'var_positive')
 VNEG_PATH = os.path.join('data', 'var_negative')
 VANC_PATH = os.path.join('data', 'var_anchor')
 VER_PATH = os.path.join('data', 'verification')
+BANC_PATH = os.path.join('data', 'benchmark_anchor')
+BPOS_PATH = os.path.join('data', 'benchmark_positive')
 
 LFW_LOCK = ".lfw"
 LFW_PATH = "lfw"
@@ -513,22 +515,30 @@ def get_verify_result(model, anc_path = ANC_PATH, ver_path = VER_PATH, max_data_
     verify_file_paths = tf.data.Dataset.list_files(ver_path+'\*.jpg').take(data_number)
     print(f"Verifying {data_number} data.")
     data = tf.data.Dataset.zip((anchor_file_paths, verify_file_paths, tf.data.Dataset.from_tensor_slices(tf.ones(len(anchor_file_paths)))))
+    print(f"data : {len(data)}")
     data = data.map(preprocess_twin)
+    print(f"data : {len(data)}")
     data = data.cache()
+    print(f"data : {len(data)}")
     data = data.shuffle(buffer_size=10000)
+    print(f"data : {len(data)}")
     data = data.take(max_data_size)
-    data = data.batch(16)
-    data = data.prefetch(8)
+    print(f"data : {len(data)}")
+    # data = data.batch(16)
+    print(f"data : {len(data)}")
+    # data = data.prefetch(8)
+    print(f"data : {len(data)}")
     test_input, test_val, _ = data.as_numpy_iterator().next()
+    print(f"data : {len(data)}")
     results = model.predict([test_input, test_val])
     return results
 
-def verify(model, ver_file_path, anc_path = ANC_PATH, max_data_size=100):
+def verify(model, ver_file_path, anc_path = ANC_PATH, max_data_size=100, verbose=True):
     data_number = min(len(os.listdir(anc_path)), max_data_size)
     anchor_file_paths = tf.data.Dataset.list_files(anc_path+'\*.jpg').take(data_number)
     verify_file_paths = tf.data.Dataset.from_tensor_slices([ver_file_path]*data_number).take(data_number)
 
-    print(f"Verifying {data_number} data.")
+    print(f"Verifying {data_number} data.") if verbose else None
     data = tf.data.Dataset.zip((anchor_file_paths, verify_file_paths, tf.data.Dataset.from_tensor_slices(tf.ones(len(anchor_file_paths)))))
     data = data.map(preprocess_twin)
     data = data.cache()
@@ -539,3 +549,30 @@ def verify(model, ver_file_path, anc_path = ANC_PATH, max_data_size=100):
     results = model.predict([test_input, test_val])
     return np.quantile(results, 0.75)
 
+
+def get_histogram_scores(model, anc_path = BANC_PATH, pos_path = BPOS_PATH, neg_path = NEG_PATH, max_harvest = 530, n_bins = 50, force_computation=False):
+    if force_computation:
+        gross_scores_positive = []
+        
+        for file_name in tqdm.tqdm(os.listdir(os.path.join(pos_path))[:max_harvest]):
+            img_path = os.path.join(pos_path, file_name)
+            gross_scores_positive.append(verify(model, img_path, anc_path, max_data_size=max_harvest, verbose=False))
+
+        gross_scores_negative = []
+
+        for file_name in tqdm.tqdm(os.listdir(os.path.join(neg_path))[:max_harvest]):
+            img_path = os.path.join(neg_path, file_name)
+            gross_scores_negative.append(verify(model, img_path, anc_path, max_data_size=max_harvest, verbose=False))
+
+        np.savez(r'gross_scores.npz', x=gross_scores_positive, y=gross_scores_negative)
+    else:
+        npzfile = np.load(r'gross_scores.npz')
+
+        gross_scores_positive=npzfile['x']
+        gross_scores_negative=npzfile['y']
+
+    fig, axs = plt.subplots(2, 1, sharex=True, tight_layout=True)
+    axs[0].hist(gross_scores_positive, bins=n_bins)
+    axs[1].hist(gross_scores_negative, bins=n_bins)
+    plt.show()
+    return gross_scores_positive, gross_scores_negative
