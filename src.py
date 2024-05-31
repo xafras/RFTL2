@@ -573,7 +573,7 @@ def get_histogram_scores(model, anc_path = BANC_PATH, pos_path = BPOS_PATH, neg_
 
     fig, axs = plt.subplots(2, 1, sharex=True, tight_layout=True, dpi = 100)
     
-    axs[1].set_xlabel('gross score')
+    axs[1].set_xlabel('infered value')
 
     axs[0].hist(gross_scores_positive, bins=n_bins, zorder=20, label="positive samples", color='tab:green')
     axs[1].hist(gross_scores_negative, bins=n_bins, zorder=20, label="negative samples", color='tab:orange')
@@ -637,7 +637,7 @@ def plot_confusion_under_threshold(data_path, min=0, max=1, n_bit=100):
     plt.plot(thresholds, false_negatives, label="false negatives", alpha=0.2)
     plt.plot(thresholds, true_negatives, label="true negatives", alpha=0.2)
     plt.plot(thresholds, (true_positives)/(true_positives+false_positives), label="precision")
-    plt.plot(thresholds, (true_positives)/(false_negatives+true_positives), label="precision")
+    plt.plot(thresholds, (true_positives)/(false_negatives+true_positives), label="recall")
     plt.xlabel('threshold')
     plt.grid(which='minor', color='#EEEEEE', linestyle=':', linewidth=0.5)
     plt.grid(which='major', color='#DDDDDD', linewidth=0.8)
@@ -647,14 +647,18 @@ def plot_confusion_under_threshold(data_path, min=0, max=1, n_bit=100):
 
 
 def plot_roc(data_path_list, min=0, max=1, n_bit=100):
-    plt.figure(figsize=(8,8))
+    cols = ['tab:blue', 'tab:blue', 'tab:orange', 'tab:orange', 'tab:green', 'tab:green', 'tab:red', 'tab:red', 'tab:cyan', 'tab:cyan']
+    k = -1
+    plt.figure(figsize=(6,6))
     for data_path in data_path_list:
-        # label = str(data_path).split()
-        thresholds, [[true_positives, false_positives], [false_negatives, true_negatives]] = confusion_under_threshold(data_path, min, max, n_bit)    
+        k += 1
+        thresholds, [[true_positives, false_positives], [false_negatives, true_negatives]] = confusion_under_threshold(data_path, min, max, n_bit)
         dlabel = str(data_path).split(".")[0].split("_")[2:]
         dlabel = " ".join(dlabel)
-        plt.plot(false_positives, true_positives, label=dlabel)
-    plt.plot([0,1], [0,1], color='black', linestyle='dashdot', alpha=0.5)
+        col = cols[k % len(cols)]
+        ls = 'solid' if k%2!=0 else 'dashed'
+        plt.plot(false_positives, true_positives, label=dlabel, color=col, linestyle=ls)
+    plt.plot([0,1], [0,1], color='black', linestyle='dashdot')
     plt.xlabel('false positive')
     plt.ylabel('true positive')
     plt.legend(loc='lower right')
