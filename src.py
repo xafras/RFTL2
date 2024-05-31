@@ -80,6 +80,7 @@ SVM_PATH = "saved_model"
 
 SAVED_MODEL_PATH = "saved_model"
 
+VERIFICATION_THRESHOLD = 0.55
 
 ###################################################################################################
 #   UTILITY
@@ -117,6 +118,7 @@ def delete_folder(folder_path):
     empty_folder(folder_path)
     if os.path.exists(folder_path):
         os.rmdir(folder_path)
+
 
 ###################################################################################################
 #   STRUCTURE GENERATION
@@ -506,7 +508,7 @@ def plot(loss, recall, precision):
 ###################################################################################################
 #   MACHINE LEARNING PREDICTION
 
-def verify(model, anc_path = ANC_PATH, ver_path = VER_PATH, max_data_size=100):
+def get_verify_result(model, anc_path = ANC_PATH, ver_path = VER_PATH, max_data_size=100):
     data_number = min(len(os.listdir(anc_path)), len(os.listdir(ver_path)))
     anchor_file_paths = tf.data.Dataset.list_files(anc_path+'\*.jpg').take(data_number)
     verify_file_paths = tf.data.Dataset.list_files(ver_path+'\*.jpg').take(data_number)
@@ -522,3 +524,19 @@ def verify(model, anc_path = ANC_PATH, ver_path = VER_PATH, max_data_size=100):
     results = model.predict([test_input, test_val])
     return results
 
+def verify(model, ver_file_path, anc_path = ANC_PATH, max_data_size=100):
+    data_number = min(len(os.listdir(anc_path)), max_data_size)
+    anchor_file_paths = tf.data.Dataset.list_files(anc_path+'\*.jpg').take(data_number)
+    verify_file_paths = tf.data.Dataset.from_tensor_slices([ver_file_path]*data_number).take(data_number)
+
+    print(f"Verifying {data_number} data.")
+    data = tf.data.Dataset.zip((anchor_file_paths, verify_file_paths, tf.data.Dataset.from_tensor_slices(tf.ones(len(anchor_file_paths)))))
+    data = data.map(preprocess_twin)
+    data = data.cache()
+    data = data.shuffle(buffer_size=10000)
+    data = data.batch(16)
+    data = data.prefetch(8)
+    test_input, test_val, _ = data.as_numpy_iterator().next()
+    results = model.predict([test_input, test_val])
+    return np.quantile(results, 0.75)
+    
