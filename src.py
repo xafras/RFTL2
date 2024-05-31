@@ -627,18 +627,38 @@ def confusion_under_threshold(data_path, min=0, max=1, n_bit=100):
         true_negatives.append((gross_scores_negative < threshold).sum()/len(gross_scores_negative))
         false_positives.append((gross_scores_negative > threshold).sum()/len(gross_scores_negative))
         false_negatives.append((gross_scores_positive < threshold).sum()/len(gross_scores_positive))
-    return thresholds, [[true_positives, false_positives], [false_negatives, true_negatives]]
+    return np.array(thresholds), [[np.array(true_positives), np.array(false_positives)], [np.array(false_negatives), np.array(true_negatives)]]
 
 def plot_confusion_under_threshold(data_path, min=0, max=1, n_bit=100):
     thresholds, [[true_positives, false_positives], [false_negatives, true_negatives]] = confusion_under_threshold(data_path, min, max, n_bit)
     plt.figure()
-    plt.plot(thresholds, true_positives, label="true_positives")
-    plt.plot(thresholds, false_positives, label="false_positives")
-    plt.plot(thresholds, false_negatives, label="false_negatives")
-    plt.plot(thresholds, true_negatives, label="true_negatives")
+    plt.plot(thresholds, true_positives, label="true positives")
+    plt.plot(thresholds, false_positives, label="false positives")
+    plt.plot(thresholds, false_negatives, label="false negatives", alpha=0.2)
+    plt.plot(thresholds, true_negatives, label="true negatives", alpha=0.2)
+    plt.plot(thresholds, (true_positives)/(true_positives+false_positives), label="precision")
+    plt.plot(thresholds, (true_positives)/(false_negatives+true_positives), label="precision")
     plt.xlabel('threshold')
     plt.grid(which='minor', color='#EEEEEE', linestyle=':', linewidth=0.5)
     plt.grid(which='major', color='#DDDDDD', linewidth=0.8)
     plt.minorticks_on()
     plt.legend(loc='center right')
+    plt.show()
+
+
+def plot_roc(data_path_list, min=0, max=1, n_bit=100):
+    plt.figure(figsize=(8,8))
+    for data_path in data_path_list:
+        # label = str(data_path).split()
+        thresholds, [[true_positives, false_positives], [false_negatives, true_negatives]] = confusion_under_threshold(data_path, min, max, n_bit)    
+        dlabel = str(data_path).split(".")[0].split("_")[2:]
+        dlabel = " ".join(dlabel)
+        plt.plot(false_positives, true_positives, label=dlabel)
+    plt.plot([0,1], [0,1], color='black', linestyle='dashdot', alpha=0.5)
+    plt.xlabel('false positive')
+    plt.ylabel('true positive')
+    plt.legend(loc='lower right')
+    plt.grid(which='minor', color='#EEEEEE', linestyle=':', linewidth=0.5)
+    plt.grid(which='major', color='#DDDDDD', linewidth=0.8)
+    plt.minorticks_on()
     plt.show()
