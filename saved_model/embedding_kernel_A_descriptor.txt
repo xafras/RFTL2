@@ -1,0 +1,2458 @@
+---------------------------------------------------------------------------------------------------
+file_name       embedding_kernel_A.h5
+n_max_person    50
+offset          0
+max_harvest     100
+time trained    500-600m
+---------------------------------------------------------------------------------------------------
+Successfully created siamese model from pretrained kernel.
+Generating data variant with George_W_Bush as anchor
+100%|██████████| 5749/5749 [00:15<00:00, 367.26it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 100/100 [00:01<00:00, 64.10it/s]
+Successfully generated 200 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 100/100 [00:00<00:00, 129.37it/s]
+Successfully generated 100 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	200
+Positive images availlable :	200
+Negative images availlable :	12493
+Tuple harvested :		200
+Labelling data
+Successfully harvested and labelled 200 data.
+Begining training 1th/100 person.
+Epoch 1/10
+9/9 [==============================] - 137s 15s/step
+Loss : 0.6825612187385559	Recall : 0.19354838132858276	Precision : 0.9230769276618958
+Epoch 2/10
+9/9 [==============================] - 134s 15s/step
+Loss : 0.6938707828521729	Recall : 0.15492957830429077	Precision : 0.6875
+Epoch 3/10
+9/9 [==============================] - 135s 15s/step
+Loss : 0.7012469172477722	Recall : 0.6376811861991882	Precision : 0.6027397513389587
+Epoch 4/10
+9/9 [==============================] - 140s 16s/step
+Loss : 0.7745205760002136	Recall : 0.3283582031726837	Precision : 0.8799999952316284
+Epoch 5/10
+9/9 [==============================] - 137s 15s/step
+Loss : 0.7272880673408508	Recall : 0.7536231875419617	Precision : 0.604651153087616
+Epoch 6/10
+9/9 [==============================] - 135s 15s/step
+Loss : 0.7280084490776062	Recall : 0.3239436745643616	Precision : 0.9583333134651184
+Epoch 7/10
+9/9 [==============================] - 140s 16s/step
+Loss : 0.6957952380180359	Recall : 0.8115941882133484	Precision : 0.7887324094772339
+Epoch 8/10
+9/9 [==============================] - 140s 16s/step
+Loss : 0.6317903399467468	Recall : 0.8153846263885498	Precision : 0.841269850730896
+Epoch 9/10
+9/9 [==============================] - 132s 15s/step
+Loss : 0.5092108845710754	Recall : 0.9076923131942749	Precision : 0.8939393758773804
+Epoch 10/10
+9/9 [==============================] - 136s 15s/step
+Loss : 0.4725067913532257	Recall : 0.9076923131942749	Precision : 0.8550724387168884
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Colin_Powell as anchor
+100%|██████████| 5749/5749 [00:16<00:00, 347.43it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 100/100 [00:01<00:00, 70.17it/s]
+Successfully generated 200 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 100/100 [00:00<00:00, 128.53it/s]
+Successfully generated 100 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	200
+Positive images availlable :	200
+Negative images availlable :	12493
+Tuple harvested :		200
+Labelling data
+Successfully harvested and labelled 200 data.
+Begining training 2th/100 person.
+Epoch 1/10
+9/9 [==============================] - 138s 15s/step
+Loss : 0.7045213580131531	Recall : 0.49275362491607666	Precision : 0.5396825671195984
+Epoch 2/10
+9/9 [==============================] - 135s 15s/step
+Loss : 0.6331997513771057	Recall : 0.52173912525177	Precision : 0.6206896305084229
+Epoch 3/10
+9/9 [==============================] - 132s 15s/step
+Loss : 0.7271043658256531	Recall : 0.3333333432674408	Precision : 0.7419354915618896
+Epoch 4/10
+9/9 [==============================] - 136s 15s/step
+Loss : 0.5386602282524109	Recall : 0.7014925479888916	Precision : 0.7460317611694336
+Epoch 5/10
+9/9 [==============================] - 133s 15s/step
+Loss : 0.3703571856021881	Recall : 0.7808219194412231	Precision : 0.8382353186607361
+Epoch 6/10
+9/9 [==============================] - 135s 15s/step
+Loss : 0.44888678193092346	Recall : 0.746268630027771	Precision : 0.8064516186714172
+Epoch 7/10
+9/9 [==============================] - 134s 15s/step
+Loss : 0.41180452704429626	Recall : 0.8450704216957092	Precision : 0.89552241563797
+Epoch 8/10
+9/9 [==============================] - 130s 14s/step
+Loss : 0.20308394730091095	Recall : 0.931506872177124	Precision : 0.9189189076423645
+Epoch 9/10
+9/9 [==============================] - 133s 15s/step
+Loss : 0.2656267583370209	Recall : 0.9594594836235046	Precision : 0.9342105388641357
+Epoch 10/10
+9/9 [==============================] - 141s 16s/step
+Loss : 0.28701552748680115	Recall : 0.9253731369972229	Precision : 0.9253731369972229
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Tony_Blair as anchor
+100%|██████████| 5749/5749 [00:17<00:00, 323.42it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 100/100 [00:01<00:00, 59.88it/s]
+Successfully generated 200 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 100/100 [00:01<00:00, 95.97it/s]
+Successfully generated 100 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	200
+Positive images availlable :	200
+Negative images availlable :	12493
+Tuple harvested :		200
+Labelling data
+Successfully harvested and labelled 200 data.
+Begining training 3th/100 person.
+Epoch 1/10
+9/9 [==============================] - 166s 18s/step
+Loss : 0.8504143357276917	Recall : 0.6842105388641357	Precision : 0.5252525210380554
+Epoch 2/10
+9/9 [==============================] - 183s 20s/step
+Loss : 0.7425761818885803	Recall : 0.5735294222831726	Precision : 0.49367088079452515
+Epoch 3/10
+9/9 [==============================] - 168s 19s/step
+Loss : 0.6334637999534607	Recall : 0.13432836532592773	Precision : 0.5
+Epoch 4/10
+9/9 [==============================] - 171s 18s/step
+Loss : 0.6958686709403992	Recall : 0.6438356041908264	Precision : 0.6811594367027283
+Epoch 5/10
+9/9 [==============================] - 173s 19s/step
+Loss : 0.6936213970184326	Recall : 0.7536231875419617	Precision : 0.6117647290229797
+Epoch 6/10
+9/9 [==============================] - 199s 22s/step
+Loss : 0.610805094242096	Recall : 0.5970149040222168	Precision : 0.6779661178588867
+Epoch 7/10
+9/9 [==============================] - 184s 21s/step
+Loss : 0.6411628127098083	Recall : 0.5223880410194397	Precision : 0.6481481194496155
+Epoch 8/10
+9/9 [==============================] - 184s 20s/step
+Loss : 0.4764620363712311	Recall : 0.7101449370384216	Precision : 0.7777777910232544
+Epoch 9/10
+9/9 [==============================] - 181s 20s/step
+Loss : 0.4986148774623871	Recall : 0.7352941036224365	Precision : 0.8474576473236084
+Epoch 10/10
+9/9 [==============================] - 168s 19s/step
+Loss : 0.5262929201126099	Recall : 0.7714285850524902	Precision : 0.8852459192276001
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Donald_Rumsfeld as anchor
+100%|██████████| 5749/5749 [00:18<00:00, 306.81it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 100/100 [00:01<00:00, 59.56it/s]
+Successfully generated 200 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 100/100 [00:00<00:00, 120.53it/s]
+Successfully generated 100 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	200
+Positive images availlable :	200
+Negative images availlable :	12493
+Tuple harvested :		200
+Labelling data
+Successfully harvested and labelled 200 data.
+Begining training 4th/100 person.
+Epoch 1/10
+9/9 [==============================] - 188s 21s/step
+Loss : 0.659675121307373	Recall : 0.27419355511665344	Precision : 0.53125
+Epoch 2/10
+9/9 [==============================] - 186s 20s/step
+Loss : 0.6567134261131287	Recall : 0.2133333384990692	Precision : 0.6153846383094788
+Epoch 3/10
+9/9 [==============================] - 189s 22s/step
+Loss : 0.6337926387786865	Recall : 0.6901408433914185	Precision : 0.6202531456947327
+Epoch 4/10
+9/9 [==============================] - 172s 18s/step
+Loss : 0.6053617596626282	Recall : 0.6470588445663452	Precision : 0.7213114500045776
+Epoch 5/10
+9/9 [==============================] - 187s 20s/step
+Loss : 0.53763747215271	Recall : 0.6315789222717285	Precision : 0.7868852615356445
+Epoch 6/10
+9/9 [==============================] - 193s 22s/step
+Loss : 0.5714637637138367	Recall : 0.7941176295280457	Precision : 0.8059701323509216
+Epoch 7/10
+9/9 [==============================] - 178s 19s/step
+Loss : 0.4700058400630951	Recall : 0.7681159377098083	Precision : 0.8030303120613098
+Epoch 8/10
+9/9 [==============================] - 174s 20s/step
+Loss : 0.5572782158851624	Recall : 0.828125	Precision : 0.8983050584793091
+Epoch 9/10
+9/9 [==============================] - 216s 24s/step
+Loss : 0.6201855540275574	Recall : 0.8208954930305481	Precision : 0.9016393423080444
+Epoch 10/10
+9/9 [==============================] - 206s 23s/step
+Loss : 0.5353017449378967	Recall : 0.8493150472640991	Precision : 0.9117646813392639
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Gerhard_Schroeder as anchor
+100%|██████████| 5749/5749 [00:17<00:00, 323.48it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 100/100 [00:01<00:00, 54.35it/s]
+Successfully generated 200 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 100/100 [00:00<00:00, 112.36it/s]
+Successfully generated 100 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	200
+Positive images availlable :	200
+Negative images availlable :	12493
+Tuple harvested :		200
+Labelling data
+Successfully harvested and labelled 200 data.
+Begining training 5th/100 person.
+Epoch 1/10
+9/9 [==============================] - 206s 23s/step
+Loss : 0.6498193740844727	Recall : 0.6617646813392639	Precision : 0.6521739363670349
+Epoch 2/10
+9/9 [==============================] - 176s 20s/step
+Loss : 0.6534479856491089	Recall : 0.8985507488250732	Precision : 0.6813187003135681
+Epoch 3/10
+9/9 [==============================] - 162s 18s/step
+Loss : 0.6191738247871399	Recall : 0.6461538672447205	Precision : 0.688524603843689
+Epoch 4/10
+9/9 [==============================] - 194s 21s/step
+Loss : 0.5883272290229797	Recall : 0.8550724387168884	Precision : 0.737500011920929
+Epoch 5/10
+9/9 [==============================] - 189s 21s/step
+Loss : 0.4463827610015869	Recall : 0.7857142686843872	Precision : 0.7638888955116272
+Epoch 6/10
+9/9 [==============================] - 185s 20s/step
+Loss : 0.502547025680542	Recall : 0.8918918967247009	Precision : 0.8354430198669434
+Epoch 7/10
+9/9 [==============================] - 178s 20s/step
+Loss : 0.5088962912559509	Recall : 0.8684210777282715	Precision : 0.9166666865348816
+Epoch 8/10
+9/9 [==============================] - 173s 20s/step
+Loss : 0.6897807121276855	Recall : 0.8787878751754761	Precision : 0.920634925365448
+Epoch 9/10
+9/9 [==============================] - 171s 18s/step
+Loss : 0.5124812722206116	Recall : 0.8970588445663452	Precision : 0.8970588445663452
+Epoch 10/10
+9/9 [==============================] - 164s 18s/step
+Loss : 0.19367225468158722	Recall : 0.9275362491607666	Precision : 0.9014084339141846
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Ariel_Sharon as anchor
+100%|██████████| 5749/5749 [00:17<00:00, 325.14it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 77/77 [00:01<00:00, 51.61it/s]
+Successfully generated 154 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 77/77 [00:01<00:00, 69.81it/s]
+Successfully generated 77 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	154
+Positive images availlable :	154
+Negative images availlable :	12516
+Tuple harvested :		154
+Labelling data
+Successfully harvested and labelled 154 data.
+Begining training 6th/100 person.
+Epoch 1/10
+7/7 [==============================] - 141s 19s/step
+Loss : 0.5881029963493347	Recall : 0.7058823704719543	Precision : 0.5538461804389954
+Epoch 2/10
+7/7 [==============================] - 136s 20s/step
+Loss : 0.585889995098114	Recall : 0.1666666716337204	Precision : 0.8999999761581421
+Epoch 3/10
+7/7 [==============================] - 146s 20s/step
+Loss : 0.6168299317359924	Recall : 0.03846153989434242	Precision : 0.6666666865348816
+Epoch 4/10
+7/7 [==============================] - 148s 21s/step
+Loss : 0.6626496315002441	Recall : 0.1525423675775528	Precision : 0.8999999761581421
+Epoch 5/10
+7/7 [==============================] - 145s 20s/step
+Loss : 0.5293191075325012	Recall : 0.1111111119389534	Precision : 0.75
+Epoch 6/10
+7/7 [==============================] - 157s 22s/step
+Loss : 0.39938458800315857	Recall : 0.2857142984867096	Precision : 0.8235294222831726
+Epoch 7/10
+7/7 [==============================] - 129s 17s/step
+Loss : 0.4954451620578766	Recall : 0.5686274766921997	Precision : 0.8529411554336548
+Epoch 8/10
+7/7 [==============================] - 134s 19s/step
+Loss : 0.7147535681724548	Recall : 0.6875	Precision : 0.824999988079071
+Epoch 9/10
+7/7 [==============================] - 131s 19s/step
+Loss : 0.5464146137237549	Recall : 0.7843137383460999	Precision : 0.8888888955116272
+Epoch 10/10
+7/7 [==============================] - 161s 23s/step
+Loss : 0.624241828918457	Recall : 0.7799999713897705	Precision : 0.8297872543334961
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Hugo_Chavez as anchor
+100%|██████████| 5749/5749 [00:18<00:00, 319.37it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 71/71 [00:01<00:00, 59.41it/s]
+Successfully generated 142 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 71/71 [00:00<00:00, 108.56it/s]
+Successfully generated 71 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	142
+Positive images availlable :	142
+Negative images availlable :	12522
+Tuple harvested :		142
+Labelling data
+Successfully harvested and labelled 142 data.
+Begining training 7th/100 person.
+Epoch 1/10
+7/7 [==============================] - 132s 19s/step
+Loss : 0.7917507886886597	Recall : 0.8823529481887817	Precision : 0.5
+Epoch 2/10
+7/7 [==============================] - 125s 18s/step
+Loss : 0.6454872488975525	Recall : 1.0	Precision : 0.5
+Epoch 3/10
+7/7 [==============================] - 119s 17s/step
+Loss : 0.7141961455345154	Recall : 1.0	Precision : 0.47999998927116394
+Epoch 4/10
+7/7 [==============================] - 116s 16s/step
+Loss : 0.6450016498565674	Recall : 1.0	Precision : 0.49000000953674316
+Epoch 5/10
+7/7 [==============================] - 112s 16s/step
+Loss : 0.6585214734077454	Recall : 1.0	Precision : 0.5199999809265137
+Epoch 6/10
+7/7 [==============================] - 122s 17s/step
+Loss : 0.7331457734107971	Recall : 1.0	Precision : 0.5
+Epoch 7/10
+7/7 [==============================] - 121s 16s/step
+Loss : 0.692505419254303	Recall : 1.0	Precision : 0.5299999713897705
+Epoch 8/10
+7/7 [==============================] - 114s 16s/step
+Loss : 0.6827919483184814	Recall : 1.0	Precision : 0.44999998807907104
+Epoch 9/10
+7/7 [==============================] - 134s 19s/step
+Loss : 0.6741113662719727	Recall : 1.0	Precision : 0.4300000071525574
+Epoch 10/10
+7/7 [==============================] - 138s 19s/step
+Loss : 0.6987252235412598	Recall : 1.0	Precision : 0.5
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Junichiro_Koizumi as anchor
+100%|██████████| 5749/5749 [00:17<00:00, 328.42it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 60/60 [00:00<00:00, 60.36it/s]
+Successfully generated 120 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 60/60 [00:00<00:00, 109.69it/s]
+Successfully generated 60 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	120
+Positive images availlable :	120
+Negative images availlable :	12533
+Tuple harvested :		120
+Labelling data
+Successfully harvested and labelled 120 data.
+Begining training 8th/100 person.
+Epoch 1/10
+6/6 [==============================] - 103s 17s/step
+Loss : 0.6972512006759644	Recall : 1.0	Precision : 0.511904776096344
+Epoch 2/10
+6/6 [==============================] - 97s 16s/step
+Loss : 0.6912277340888977	Recall : 0.5952380895614624	Precision : 0.5555555820465088
+Epoch 3/10
+6/6 [==============================] - 96s 16s/step
+Loss : 0.6562129855155945	Recall : 0.2777777910232544	Precision : 0.4545454680919647
+Epoch 4/10
+6/6 [==============================] - 121s 20s/step
+Loss : 0.69827800989151	Recall : 0.15909090638160706	Precision : 0.5384615659713745
+Epoch 5/10
+6/6 [==============================] - 110s 17s/step
+Loss : 0.7111004590988159	Recall : 0.08888889104127884	Precision : 0.6666666865348816
+Epoch 6/10
+6/6 [==============================] - 116s 19s/step
+Loss : 0.6673976182937622	Recall : 0.15909090638160706	Precision : 0.6363636255264282
+Epoch 7/10
+6/6 [==============================] - 107s 18s/step
+Loss : 0.6966290473937988	Recall : 0.125	Precision : 0.5
+Epoch 8/10
+6/6 [==============================] - 96s 16s/step
+Loss : 0.7190152406692505	Recall : 0.0731707289814949	Precision : 0.6000000238418579
+Epoch 9/10
+6/6 [==============================] - 102s 17s/step
+Loss : 0.6260875463485718	Recall : 0.02631578966975212	Precision : 0.3333333432674408
+Epoch 10/10
+6/6 [==============================] - 106s 17s/step
+Loss : 0.6795704960823059	Recall : 0.022727273404598236	Precision : 1.0
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Jean_Chretien as anchor
+100%|██████████| 5749/5749 [00:17<00:00, 326.80it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 55/55 [00:00<00:00, 64.03it/s]
+Successfully generated 110 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 55/55 [00:00<00:00, 114.35it/s]
+Successfully generated 55 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	110
+Positive images availlable :	110
+Negative images availlable :	12538
+Tuple harvested :		110
+Labelling data
+Successfully harvested and labelled 110 data.
+Begining training 9th/100 person.
+Epoch 1/10
+5/5 [==============================] - 96s 19s/step
+Loss : 0.6147228479385376	Recall : 0.0	Precision : 0.0
+Epoch 2/10
+5/5 [==============================] - 94s 19s/step
+Loss : 0.7498567700386047	Recall : 0.0	Precision : 0.0
+Epoch 3/10
+5/5 [==============================] - 93s 19s/step
+Loss : 0.7016163468360901	Recall : 0.025641025975346565	Precision : 1.0
+Epoch 4/10
+5/5 [==============================] - 94s 19s/step
+Loss : 0.640788733959198	Recall : 0.027027027681469917	Precision : 1.0
+Epoch 5/10
+5/5 [==============================] - 104s 22s/step
+Loss : 0.6750034689903259	Recall : 0.0	Precision : 0.0
+Epoch 6/10
+5/5 [==============================] - 94s 19s/step
+Loss : 0.6863030195236206	Recall : 0.02777777798473835	Precision : 1.0
+Epoch 7/10
+5/5 [==============================] - 100s 19s/step
+Loss : 0.6905049085617065	Recall : 0.0	Precision : 0.0
+Epoch 8/10
+5/5 [==============================] - 99s 20s/step
+Loss : 0.6553377509117126	Recall : 0.02500000037252903	Precision : 1.0
+Epoch 9/10
+5/5 [==============================] - 108s 22s/step
+Loss : 0.615281879901886	Recall : 0.02777777798473835	Precision : 1.0
+Epoch 10/10
+5/5 [==============================] - 106s 20s/step
+Loss : 0.5995467305183411	Recall : 0.05000000074505806	Precision : 1.0
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with John_Ashcroft as anchor
+100%|██████████| 5749/5749 [00:19<00:00, 298.74it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 53/53 [00:00<00:00, 59.15it/s]
+Successfully generated 106 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 53/53 [00:00<00:00, 114.72it/s]
+Successfully generated 53 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	106
+Positive images availlable :	106
+Negative images availlable :	12540
+Tuple harvested :		106
+Labelling data
+Successfully harvested and labelled 106 data.
+Begining training 10th/100 person.
+Epoch 1/10
+5/5 [==============================] - 103s 20s/step
+Loss : 0.6096721291542053	Recall : 0.0	Precision : 0.0
+Epoch 2/10
+5/5 [==============================] - 82s 17s/step
+Loss : 0.6729810237884521	Recall : 0.0	Precision : 0.0
+Epoch 3/10
+5/5 [==============================] - 92s 19s/step
+Loss : 0.6742261648178101	Recall : 0.02857142873108387	Precision : 1.0
+Epoch 4/10
+5/5 [==============================] - 87s 17s/step
+Loss : 0.6932501196861267	Recall : 0.02631578966975212	Precision : 0.5
+Epoch 5/10
+5/5 [==============================] - 98s 20s/step
+Loss : 0.5748552680015564	Recall : 0.02857142873108387	Precision : 1.0
+Epoch 6/10
+5/5 [==============================] - 101s 19s/step
+Loss : 0.5730395913124084	Recall : 0.05882352963089943	Precision : 1.0
+Epoch 7/10
+5/5 [==============================] - 87s 18s/step
+Loss : 0.5809692740440369	Recall : 0.095238097012043	Precision : 1.0
+Epoch 8/10
+5/5 [==============================] - 93s 19s/step
+Loss : 0.6283918023109436	Recall : 0.1515151560306549	Precision : 0.8333333134651184
+Epoch 9/10
+5/5 [==============================] - 106s 21s/step
+Loss : 0.5544233322143555	Recall : 0.2702702581882477	Precision : 0.9090909361839294
+Epoch 10/10
+5/5 [==============================] - 103s 20s/step
+Loss : 0.5172977447509766	Recall : 0.375	Precision : 1.0
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Jacques_Chirac as anchor
+100%|██████████| 5749/5749 [00:18<00:00, 311.56it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 52/52 [00:01<00:00, 38.81it/s]
+Successfully generated 104 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 52/52 [00:00<00:00, 115.56it/s]
+Successfully generated 52 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	104
+Positive images availlable :	104
+Negative images availlable :	12541
+Tuple harvested :		104
+Labelling data
+Successfully harvested and labelled 104 data.
+Begining training 11th/100 person.
+Epoch 1/10
+5/5 [==============================] - 96s 19s/step
+Loss : 0.6109508275985718	Recall : 0.20588235557079315	Precision : 0.875
+Epoch 2/10
+5/5 [==============================] - 93s 17s/step
+Loss : 0.7662137746810913	Recall : 0.5641025900840759	Precision : 0.8461538553237915
+Epoch 3/10
+5/5 [==============================] - 108s 21s/step
+Loss : 0.48257750272750854	Recall : 0.5897436141967773	Precision : 0.7931034564971924
+Epoch 4/10
+5/5 [==============================] - 90s 18s/step
+Loss : 0.56890469789505	Recall : 0.6571428775787354	Precision : 0.7666666507720947
+Epoch 5/10
+5/5 [==============================] - 100s 20s/step
+Loss : 0.36067160964012146	Recall : 0.8529411554336548	Precision : 0.8529411554336548
+Epoch 6/10
+5/5 [==============================] - 107s 22s/step
+Loss : 0.26886799931526184	Recall : 0.8333333134651184	Precision : 0.8571428656578064
+Epoch 7/10
+5/5 [==============================] - 115s 22s/step
+Loss : 0.23939430713653564	Recall : 0.9090909361839294	Precision : 0.8823529481887817
+Epoch 8/10
+5/5 [==============================] - 99s 20s/step
+Loss : 0.2699999213218689	Recall : 0.8823529481887817	Precision : 0.9677419066429138
+Epoch 9/10
+5/5 [==============================] - 108s 21s/step
+Loss : 0.18955858051776886	Recall : 0.9210526347160339	Precision : 0.9722222089767456
+Epoch 10/10
+5/5 [==============================] - 104s 21s/step
+Loss : 0.3504795730113983	Recall : 0.925000011920929	Precision : 0.9736841917037964
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Serena_Williams as anchor
+100%|██████████| 5749/5749 [00:19<00:00, 293.81it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 52/52 [00:00<00:00, 61.39it/s]
+Successfully generated 104 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 52/52 [00:00<00:00, 100.00it/s]
+Successfully generated 52 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	104
+Positive images availlable :	104
+Negative images availlable :	12541
+Tuple harvested :		104
+Labelling data
+Successfully harvested and labelled 104 data.
+Begining training 12th/100 person.
+Epoch 1/10
+5/5 [==============================] - 109s 21s/step
+Loss : 0.8131362199783325	Recall : 0.5714285969734192	Precision : 0.6896551847457886
+Epoch 2/10
+5/5 [==============================] - 85s 17s/step
+Loss : 0.73359215259552	Recall : 0.3888888955116272	Precision : 0.699999988079071
+Epoch 3/10
+5/5 [==============================] - 88s 16s/step
+Loss : 0.696623682975769	Recall : 0.6153846383094788	Precision : 0.6857143044471741
+Epoch 4/10
+5/5 [==============================] - 87s 17s/step
+Loss : 0.6003584265708923	Recall : 0.37142857909202576	Precision : 0.6842105388641357
+Epoch 5/10
+5/5 [==============================] - 100s 20s/step
+Loss : 0.5400218367576599	Recall : 0.15000000596046448	Precision : 1.0
+Epoch 6/10
+5/5 [==============================] - 100s 19s/step
+Loss : 0.6396531462669373	Recall : 0.2631579041481018	Precision : 0.8333333134651184
+Epoch 7/10
+5/5 [==============================] - 98s 18s/step
+Loss : 0.4970756471157074	Recall : 0.3235294222831726	Precision : 1.0
+Epoch 8/10
+5/5 [==============================] - 92s 19s/step
+Loss : 0.5648446083068848	Recall : 0.37837839126586914	Precision : 1.0
+Epoch 9/10
+5/5 [==============================] - 95s 17s/step
+Loss : 0.6305754780769348	Recall : 0.45945945382118225	Precision : 1.0
+Epoch 10/10
+5/5 [==============================] - 88s 17s/step
+Loss : 0.36385276913642883	Recall : 0.5	Precision : 0.949999988079071
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Vladimir_Putin as anchor
+100%|██████████| 5749/5749 [00:18<00:00, 311.23it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 49/49 [00:01<00:00, 31.49it/s]
+Successfully generated 98 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 49/49 [00:00<00:00, 105.60it/s]
+Successfully generated 49 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	98
+Positive images availlable :	98
+Negative images availlable :	12544
+Tuple harvested :		98
+Labelling data
+Successfully harvested and labelled 98 data.
+Begining training 13th/100 person.
+Epoch 1/10
+5/5 [==============================] - 103s 20s/step
+Loss : 0.6502166390419006	Recall : 0.65625	Precision : 0.6176470518112183
+Epoch 2/10
+5/5 [==============================] - 91s 18s/step
+Loss : 0.7000621557235718	Recall : 0.8235294222831726	Precision : 0.5833333134651184
+Epoch 3/10
+5/5 [==============================] - 98s 19s/step
+Loss : 0.5916621088981628	Recall : 0.2857142984867096	Precision : 0.8333333134651184
+Epoch 4/10
+5/5 [==============================] - 90s 18s/step
+Loss : 0.6176186203956604	Recall : 0.6451612710952759	Precision : 0.8333333134651184
+Epoch 5/10
+5/5 [==============================] - 83s 17s/step
+Loss : 0.5918008089065552	Recall : 0.6486486196517944	Precision : 0.8571428656578064
+Epoch 6/10
+5/5 [==============================] - 86s 17s/step
+Loss : 0.6206753253936768	Recall : 0.7027027010917664	Precision : 0.8666666746139526
+Epoch 7/10
+5/5 [==============================] - 83s 16s/step
+Loss : 0.3263837695121765	Recall : 0.71875	Precision : 0.8846153616905212
+Epoch 8/10
+5/5 [==============================] - 87s 17s/step
+Loss : 0.23214974999427795	Recall : 0.9444444179534912	Precision : 0.9189189076423645
+Epoch 9/10
+5/5 [==============================] - 97s 18s/step
+Loss : 0.7419143915176392	Recall : 0.9375	Precision : 0.8823529481887817
+Epoch 10/10
+5/5 [==============================] - 107s 20s/step
+Loss : 0.19665881991386414	Recall : 0.6470588445663452	Precision : 1.0
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Luiz_Inacio_Lula_da_Silva as anchor
+100%|██████████| 5749/5749 [00:18<00:00, 312.92it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 48/48 [00:00<00:00, 62.58it/s]
+Successfully generated 96 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 48/48 [00:00<00:00, 116.79it/s]
+Successfully generated 48 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	96
+Positive images availlable :	96
+Negative images availlable :	12545
+Tuple harvested :		96
+Labelling data
+Successfully harvested and labelled 96 data.
+Begining training 14th/100 person.
+Epoch 1/10
+5/5 [==============================] - 89s 16s/step
+Loss : 0.9050731062889099	Recall : 0.625	Precision : 0.5882353186607361
+Epoch 2/10
+5/5 [==============================] - 86s 17s/step
+Loss : 0.39794111251831055	Recall : 0.7692307829856873	Precision : 0.7692307829856873
+Epoch 3/10
+5/5 [==============================] - 90s 18s/step
+Loss : 0.3659556210041046	Recall : 0.7419354915618896	Precision : 0.6216216087341309
+Epoch 4/10
+5/5 [==============================] - 98s 19s/step
+Loss : 0.624993085861206	Recall : 0.6176470518112183	Precision : 0.75
+Epoch 5/10
+5/5 [==============================] - 89s 18s/step
+Loss : 0.5583932995796204	Recall : 0.8571428656578064	Precision : 0.6818181872367859
+Epoch 6/10
+5/5 [==============================] - 95s 20s/step
+Loss : 0.31221121549606323	Recall : 0.65625	Precision : 0.8399999737739563
+Epoch 7/10
+5/5 [==============================] - 86s 15s/step
+Loss : 0.5031423568725586	Recall : 0.7272727489471436	Precision : 0.8888888955116272
+Epoch 8/10
+5/5 [==============================] - 82s 16s/step
+Loss : 0.5581180453300476	Recall : 0.8571428656578064	Precision : 0.8108108043670654
+Epoch 9/10
+5/5 [==============================] - 89s 16s/step
+Loss : 0.3868933618068695	Recall : 0.8285714387893677	Precision : 0.8529411554336548
+Epoch 10/10
+5/5 [==============================] - 84s 17s/step
+Loss : 0.273764967918396	Recall : 0.8999999761581421	Precision : 0.8709677457809448
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Gloria_Macapagal_Arroyo as anchor
+100%|██████████| 5749/5749 [00:19<00:00, 294.17it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 44/44 [00:00<00:00, 58.51it/s]
+Successfully generated 88 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 44/44 [00:00<00:00, 105.77it/s]
+Successfully generated 44 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	88
+Positive images availlable :	88
+Negative images availlable :	12549
+Tuple harvested :		88
+Labelling data
+Successfully harvested and labelled 88 data.
+Begining training 15th/100 person.
+Epoch 1/10
+4/4 [==============================] - 78s 20s/step
+Loss : 0.6436741948127747	Recall : 0.375	Precision : 0.47999998927116394
+Epoch 2/10
+4/4 [==============================] - 70s 17s/step
+Loss : 0.6842280626296997	Recall : 0.9354838728904724	Precision : 0.5370370149612427
+Epoch 3/10
+4/4 [==============================] - 88s 23s/step
+Loss : 0.7056035995483398	Recall : 0.5483871102333069	Precision : 0.5666666626930237
+Epoch 4/10
+4/4 [==============================] - 70s 17s/step
+Loss : 0.6581929326057434	Recall : 0.4615384638309479	Precision : 0.6315789222717285
+Epoch 5/10
+4/4 [==============================] - 75s 19s/step
+Loss : 0.682303249835968	Recall : 0.3103448152542114	Precision : 0.8181818127632141
+Epoch 6/10
+4/4 [==============================] - 85s 21s/step
+Loss : 0.5527342557907104	Recall : 0.37037035822868347	Precision : 0.625
+Epoch 7/10
+4/4 [==============================] - 94s 23s/step
+Loss : 0.6365422606468201	Recall : 0.37037035822868347	Precision : 0.6666666865348816
+Epoch 8/10
+4/4 [==============================] - 80s 21s/step
+Loss : 0.6270326972007751	Recall : 0.5517241358757019	Precision : 0.7272727489471436
+Epoch 9/10
+4/4 [==============================] - 89s 22s/step
+Loss : 0.6100408434867859	Recall : 0.7333333492279053	Precision : 0.7586206793785095
+Epoch 10/10
+4/4 [==============================] - 85s 20s/step
+Loss : 0.655003547668457	Recall : 0.6896551847457886	Precision : 0.8333333134651184
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Arnold_Schwarzenegger as anchor
+100%|██████████| 5749/5749 [00:18<00:00, 310.49it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 42/42 [00:00<00:00, 57.77it/s]
+Successfully generated 84 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 42/42 [00:00<00:00, 112.90it/s]
+Successfully generated 42 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	84
+Positive images availlable :	84
+Negative images availlable :	12551
+Tuple harvested :		84
+Labelling data
+Successfully harvested and labelled 84 data.
+Begining training 16th/100 person.
+Epoch 1/10
+4/4 [==============================] - 67s 17s/step
+Loss : 0.8807416558265686	Recall : 0.4615384638309479	Precision : 0.6315789222717285
+Epoch 2/10
+4/4 [==============================] - 85s 22s/step
+Loss : 0.5773729085922241	Recall : 0.6333333253860474	Precision : 0.5588235259056091
+Epoch 3/10
+4/4 [==============================] - 91s 22s/step
+Loss : 0.5476148128509521	Recall : 0.7037037014961243	Precision : 0.5757575631141663
+Epoch 4/10
+4/4 [==============================] - 67s 16s/step
+Loss : 0.7532066106796265	Recall : 0.35483869910240173	Precision : 0.6875
+Epoch 5/10
+4/4 [==============================] - 85s 20s/step
+Loss : 0.6452592611312866	Recall : 0.5666666626930237	Precision : 0.8500000238418579
+Epoch 6/10
+4/4 [==============================] - 80s 18s/step
+Loss : 0.649879515171051	Recall : 0.6875	Precision : 0.7333333492279053
+Epoch 7/10
+4/4 [==============================] - 78s 20s/step
+Loss : 0.6103357076644897	Recall : 0.7352941036224365	Precision : 0.8333333134651184
+Epoch 8/10
+4/4 [==============================] - 82s 21s/step
+Loss : 0.5339229702949524	Recall : 0.6428571343421936	Precision : 0.782608687877655
+Epoch 9/10
+4/4 [==============================] - 76s 19s/step
+Loss : 0.5169179439544678	Recall : 0.7666666507720947	Precision : 0.8518518805503845
+Epoch 10/10
+4/4 [==============================] - 75s 20s/step
+Loss : 0.6196340322494507	Recall : 0.7857142686843872	Precision : 0.8461538553237915
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Jennifer_Capriati as anchor
+100%|██████████| 5749/5749 [00:17<00:00, 321.31it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 42/42 [00:00<00:00, 54.76it/s]
+Successfully generated 84 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 42/42 [00:00<00:00, 104.22it/s]
+Successfully generated 42 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	84
+Positive images availlable :	84
+Negative images availlable :	12551
+Tuple harvested :		84
+Labelling data
+Successfully harvested and labelled 84 data.
+Begining training 17th/100 person.
+Epoch 1/10
+4/4 [==============================] - 72s 18s/step
+Loss : 0.7855022549629211	Recall : 0.4516128897666931	Precision : 0.699999988079071
+Epoch 2/10
+4/4 [==============================] - 91s 22s/step
+Loss : 0.5450565814971924	Recall : 0.625	Precision : 0.7407407164573669
+Epoch 3/10
+4/4 [==============================] - 90s 22s/step
+Loss : 0.7485414743423462	Recall : 0.5	Precision : 0.8235294222831726
+Epoch 4/10
+4/4 [==============================] - 76s 19s/step
+Loss : 0.6308691501617432	Recall : 0.6428571343421936	Precision : 0.8571428656578064
+Epoch 5/10
+4/4 [==============================] - 80s 18s/step
+Loss : 0.6042595505714417	Recall : 0.7037037014961243	Precision : 0.8636363744735718
+Epoch 6/10
+4/4 [==============================] - 82s 20s/step
+Loss : 0.36884862184524536	Recall : 0.6785714030265808	Precision : 0.9047619104385376
+Epoch 7/10
+4/4 [==============================] - 74s 18s/step
+Loss : 0.45437926054000854	Recall : 0.7142857313156128	Precision : 0.8695651888847351
+Epoch 8/10
+4/4 [==============================] - 77s 20s/step
+Loss : 0.24764157831668854	Recall : 0.84375	Precision : 0.931034505367279
+Epoch 9/10
+4/4 [==============================] - 84s 22s/step
+Loss : 0.22227807343006134	Recall : 0.8620689511299133	Precision : 0.8620689511299133
+Epoch 10/10
+4/4 [==============================] - 83s 22s/step
+Loss : 0.29476213455200195	Recall : 0.9599999785423279	Precision : 0.9230769276618958
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Laura_Bush as anchor
+100%|██████████| 5749/5749 [00:19<00:00, 301.07it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 41/41 [00:01<00:00, 27.66it/s]
+Successfully generated 82 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 41/41 [00:00<00:00, 112.95it/s]
+Successfully generated 41 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	82
+Positive images availlable :	82
+Negative images availlable :	12552
+Tuple harvested :		82
+Labelling data
+Successfully harvested and labelled 82 data.
+Begining training 18th/100 person.
+Epoch 1/10
+4/4 [==============================] - 71s 18s/step
+Loss : 0.4612855315208435	Recall : 0.6296296119689941	Precision : 0.7727272510528564
+Epoch 2/10
+4/4 [==============================] - 86s 20s/step
+Loss : 0.7319561839103699	Recall : 0.4838709533214569	Precision : 0.8333333134651184
+Epoch 3/10
+4/4 [==============================] - 73s 18s/step
+Loss : 0.8836142420768738	Recall : 0.774193525314331	Precision : 0.8275862336158752
+Epoch 4/10
+4/4 [==============================] - 76s 20s/step
+Loss : 0.7225397825241089	Recall : 0.7666666507720947	Precision : 0.8846153616905212
+Epoch 5/10
+4/4 [==============================] - 63s 15s/step
+Loss : 0.654532253742218	Recall : 0.8461538553237915	Precision : 0.7857142686843872
+Epoch 6/10
+4/4 [==============================] - 77s 18s/step
+Loss : 0.29350993037223816	Recall : 0.8695651888847351	Precision : 0.8333333134651184
+Epoch 7/10
+4/4 [==============================] - 71s 18s/step
+Loss : 0.3830093741416931	Recall : 0.8620689511299133	Precision : 0.8620689511299133
+Epoch 8/10
+4/4 [==============================] - 70s 18s/step
+Loss : 0.24369516968727112	Recall : 0.9285714030265808	Precision : 0.9285714030265808
+Epoch 9/10
+4/4 [==============================] - 81s 20s/step
+Loss : 0.15024134516716003	Recall : 0.9285714030265808	Precision : 0.8666666746139526
+Epoch 10/10
+4/4 [==============================] - 67s 17s/step
+Loss : 0.3723589777946472	Recall : 0.931034505367279	Precision : 0.931034505367279
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Lleyton_Hewitt as anchor
+100%|██████████| 5749/5749 [00:19<00:00, 300.62it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 41/41 [00:00<00:00, 60.03it/s]
+Successfully generated 82 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 41/41 [00:00<00:00, 111.41it/s]
+Successfully generated 41 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	82
+Positive images availlable :	82
+Negative images availlable :	12552
+Tuple harvested :		82
+Labelling data
+Successfully harvested and labelled 82 data.
+Begining training 19th/100 person.
+Epoch 1/10
+4/4 [==============================] - 78s 18s/step
+Loss : 1.2921640872955322	Recall : 0.7083333134651184	Precision : 0.4722222089767456
+Epoch 2/10
+4/4 [==============================] - 72s 16s/step
+Loss : 0.7295398712158203	Recall : 0.9629629850387573	Precision : 0.48148149251937866
+Epoch 3/10
+4/4 [==============================] - 66s 16s/step
+Loss : 0.645289421081543	Recall : 0.78125	Precision : 0.6756756901741028
+Epoch 4/10
+4/4 [==============================] - 64s 16s/step
+Loss : 0.6022274494171143	Recall : 0.7333333492279053	Precision : 0.7333333492279053
+Epoch 5/10
+4/4 [==============================] - 82s 19s/step
+Loss : 0.6722664833068848	Recall : 0.7241379022598267	Precision : 0.875
+Epoch 6/10
+4/4 [==============================] - 72s 18s/step
+Loss : 0.48996439576148987	Recall : 0.7037037014961243	Precision : 0.7599999904632568
+Epoch 7/10
+4/4 [==============================] - 75s 18s/step
+Loss : 0.4027189314365387	Recall : 0.8666666746139526	Precision : 0.9285714030265808
+Epoch 8/10
+4/4 [==============================] - 75s 20s/step
+Loss : 0.505757212638855	Recall : 0.8709677457809448	Precision : 0.8709677457809448
+Epoch 9/10
+4/4 [==============================] - 78s 18s/step
+Loss : 0.40301313996315	Recall : 0.8214285969734192	Precision : 0.9200000166893005
+Epoch 10/10
+4/4 [==============================] - 63s 15s/step
+Loss : 0.4244197905063629	Recall : 0.7931034564971924	Precision : 0.9583333134651184
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Alejandro_Toledo as anchor
+100%|██████████| 5749/5749 [00:18<00:00, 310.09it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 39/39 [00:01<00:00, 28.51it/s]
+Successfully generated 78 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 39/39 [00:00<00:00, 116.07it/s]
+Successfully generated 39 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	78
+Positive images availlable :	78
+Negative images availlable :	12554
+Tuple harvested :		78
+Labelling data
+Successfully harvested and labelled 78 data.
+Begining training 20th/100 person.
+Epoch 1/10
+4/4 [==============================] - 64s 14s/step
+Loss : 0.6896234750747681	Recall : 0.23999999463558197	Precision : 0.4285714328289032
+Epoch 2/10
+4/4 [==============================] - 81s 19s/step
+Loss : 0.7437710762023926	Recall : 0.25925925374031067	Precision : 0.7777777910232544
+Epoch 3/10
+4/4 [==============================] - 71s 18s/step
+Loss : 0.7208552360534668	Recall : 0.5555555820465088	Precision : 0.5769230723381042
+Epoch 4/10
+4/4 [==============================] - 70s 15s/step
+Loss : 0.7347596883773804	Recall : 0.8399999737739563	Precision : 0.5526315569877625
+Epoch 5/10
+4/4 [==============================] - 76s 19s/step
+Loss : 0.6832571625709534	Recall : 0.5517241358757019	Precision : 0.7272727489471436
+Epoch 6/10
+4/4 [==============================] - 67s 15s/step
+Loss : 0.6449213027954102	Recall : 0.42307692766189575	Precision : 0.7333333492279053
+Epoch 7/10
+4/4 [==============================] - 82s 19s/step
+Loss : 0.5700079202651978	Recall : 0.5357142686843872	Precision : 0.75
+Epoch 8/10
+4/4 [==============================] - 71s 15s/step
+Loss : 0.6385094523429871	Recall : 0.5833333134651184	Precision : 0.6666666865348816
+Epoch 9/10
+4/4 [==============================] - 77s 18s/step
+Loss : 0.6305976510047913	Recall : 0.36000001430511475	Precision : 1.0
+Epoch 10/10
+4/4 [==============================] - 69s 15s/step
+Loss : 0.6197056770324707	Recall : 0.5555555820465088	Precision : 1.0
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Hans_Blix as anchor
+100%|██████████| 5749/5749 [00:18<00:00, 311.66it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 39/39 [00:00<00:00, 58.91it/s]
+Successfully generated 78 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 39/39 [00:01<00:00, 38.92it/s]
+Successfully generated 39 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	78
+Positive images availlable :	78
+Negative images availlable :	12554
+Tuple harvested :		78
+Labelling data
+Successfully harvested and labelled 78 data.
+Begining training 21th/100 person.
+Epoch 1/10
+4/4 [==============================] - 86s 20s/step
+Loss : 0.7722368836402893	Recall : 0.2857142984867096	Precision : 0.5333333611488342
+Epoch 2/10
+4/4 [==============================] - 84s 20s/step
+Loss : 0.7357813119888306	Recall : 0.25806450843811035	Precision : 0.5714285969734192
+Epoch 3/10
+4/4 [==============================] - 83s 20s/step
+Loss : 0.6722275614738464	Recall : 0.5	Precision : 0.7368420958518982
+Epoch 4/10
+4/4 [==============================] - 82s 19s/step
+Loss : 0.6759928464889526	Recall : 0.3461538553237915	Precision : 0.692307710647583
+Epoch 5/10
+4/4 [==============================] - 74s 16s/step
+Loss : 0.572165310382843	Recall : 0.8064516186714172	Precision : 0.7352941036224365
+Epoch 6/10
+4/4 [==============================] - 64s 16s/step
+Loss : 0.7003780007362366	Recall : 0.9666666388511658	Precision : 0.7250000238418579
+Epoch 7/10
+4/4 [==============================] - 66s 16s/step
+Loss : 0.6250714063644409	Recall : 0.7857142686843872	Precision : 0.7096773982048035
+Epoch 8/10
+4/4 [==============================] - 69s 17s/step
+Loss : 0.5272514224052429	Recall : 0.8333333134651184	Precision : 0.8333333134651184
+Epoch 9/10
+4/4 [==============================] - 71s 15s/step
+Loss : 0.6583355665206909	Recall : 0.8799999952316284	Precision : 0.8148148059844971
+Epoch 10/10
+4/4 [==============================] - 80s 19s/step
+Loss : 0.48217251896858215	Recall : 0.8888888955116272	Precision : 0.8571428656578064
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Nestor_Kirchner as anchor
+100%|██████████| 5749/5749 [00:17<00:00, 330.73it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 37/37 [00:00<00:00, 53.55it/s]
+Successfully generated 74 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 37/37 [00:00<00:00, 116.72it/s]
+Successfully generated 37 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	74
+Positive images availlable :	74
+Negative images availlable :	12556
+Tuple harvested :		74
+Labelling data
+Successfully harvested and labelled 74 data.
+Begining training 22th/100 person.
+Epoch 1/10
+4/4 [==============================] - 74s 16s/step
+Loss : 0.8448477387428284	Recall : 0.4399999976158142	Precision : 0.5
+Epoch 2/10
+4/4 [==============================] - 66s 17s/step
+Loss : 0.864822268486023	Recall : 0.9166666865348816	Precision : 0.4680851101875305
+Epoch 3/10
+4/4 [==============================] - 71s 16s/step
+Loss : 0.6449721455574036	Recall : 0.7083333134651184	Precision : 0.5666666626930237
+Epoch 4/10
+4/4 [==============================] - 73s 18s/step
+Loss : 0.7026666402816772	Recall : 0.4838709533214569	Precision : 0.9375
+Epoch 5/10
+4/4 [==============================] - 64s 15s/step
+Loss : 0.6682745218276978	Recall : 0.6521739363670349	Precision : 0.75
+Epoch 6/10
+4/4 [==============================] - 72s 16s/step
+Loss : 0.6988565921783447	Recall : 0.4642857015132904	Precision : 0.8666666746139526
+Epoch 7/10
+4/4 [==============================] - 63s 16s/step
+Loss : 0.6906299591064453	Recall : 0.6206896305084229	Precision : 0.782608687877655
+Epoch 8/10
+4/4 [==============================] - 71s 16s/step
+Loss : 0.6875913739204407	Recall : 0.6399999856948853	Precision : 0.7272727489471436
+Epoch 9/10
+4/4 [==============================] - 59s 14s/step
+Loss : 0.6674309968948364	Recall : 0.6538461446762085	Precision : 0.7727272510528564
+Epoch 10/10
+4/4 [==============================] - 72s 16s/step
+Loss : 0.6712781190872192	Recall : 0.7857142686843872	Precision : 0.7857142686843872
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Andre_Agassi as anchor
+100%|██████████| 5749/5749 [00:18<00:00, 308.24it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 36/36 [00:00<00:00, 53.02it/s]
+Successfully generated 72 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 36/36 [00:00<00:00, 101.41it/s]
+Successfully generated 36 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	72
+Positive images availlable :	72
+Negative images availlable :	12557
+Tuple harvested :		72
+Labelling data
+Successfully harvested and labelled 72 data.
+Begining training 23th/100 person.
+Epoch 1/10
+4/4 [==============================] - 66s 16s/step
+Loss : 0.6817930340766907	Recall : 0.5416666865348816	Precision : 0.4642857015132904
+Epoch 2/10
+4/4 [==============================] - 72s 18s/step
+Loss : 0.7836756706237793	Recall : 0.6000000238418579	Precision : 0.5357142686843872
+Epoch 3/10
+4/4 [==============================] - 65s 14s/step
+Loss : 0.683790922164917	Recall : 0.7586206793785095	Precision : 0.6470588445663452
+Epoch 4/10
+4/4 [==============================] - 64s 16s/step
+Loss : 0.7070205211639404	Recall : 0.9615384340286255	Precision : 0.5102040767669678
+Epoch 5/10
+4/4 [==============================] - 59s 13s/step
+Loss : 0.6491473317146301	Recall : 1.0	Precision : 0.4399999976158142
+Epoch 6/10
+4/4 [==============================] - 69s 15s/step
+Loss : 0.6591961979866028	Recall : 1.0	Precision : 0.5625
+Epoch 7/10
+4/4 [==============================] - 60s 14s/step
+Loss : 0.6184377670288086	Recall : 1.0	Precision : 0.6078431606292725
+Epoch 8/10
+4/4 [==============================] - 71s 18s/step
+Loss : 0.6757133603096008	Recall : 1.0	Precision : 0.47058823704719543
+Epoch 9/10
+4/4 [==============================] - 59s 14s/step
+Loss : 0.573223352432251	Recall : 1.0	Precision : 0.47058823704719543
+Epoch 10/10
+4/4 [==============================] - 59s 14s/step
+Loss : 0.7063998579978943	Recall : 1.0	Precision : 0.4901960790157318
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Alvaro_Uribe as anchor
+100%|██████████| 5749/5749 [00:19<00:00, 294.71it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 35/35 [00:00<00:00, 58.92it/s]
+Successfully generated 70 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 35/35 [00:00<00:00, 116.67it/s]
+Successfully generated 35 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	70
+Positive images availlable :	70
+Negative images availlable :	12558
+Tuple harvested :		70
+Labelling data
+Successfully harvested and labelled 70 data.
+Begining training 24th/100 person.
+Epoch 1/10
+4/4 [==============================] - 71s 18s/step
+Loss : 0.6463128924369812	Recall : 1.0	Precision : 0.46000000834465027
+Epoch 2/10
+4/4 [==============================] - 64s 15s/step
+Loss : 0.6188333034515381	Recall : 1.0	Precision : 0.5199999809265137
+Epoch 3/10
+4/4 [==============================] - 64s 13s/step
+Loss : 0.8163453340530396	Recall : 1.0	Precision : 0.46000000834465027
+Epoch 4/10
+4/4 [==============================] - 62s 13s/step
+Loss : 0.6612500548362732	Recall : 1.0	Precision : 0.4000000059604645
+Epoch 5/10
+4/4 [==============================] - 65s 15s/step
+Loss : 0.6770901679992676	Recall : 1.0	Precision : 0.5199999809265137
+Epoch 6/10
+4/4 [==============================] - 57s 13s/step
+Loss : 0.7245292067527771	Recall : 1.0	Precision : 0.5
+Epoch 7/10
+4/4 [==============================] - 67s 17s/step
+Loss : 0.7113739848136902	Recall : 1.0	Precision : 0.5199999809265137
+Epoch 8/10
+4/4 [==============================] - 74s 17s/step
+Loss : 0.6887689828872681	Recall : 1.0	Precision : 0.5400000214576721
+Epoch 9/10
+4/4 [==============================] - 68s 15s/step
+Loss : 0.6743446588516235	Recall : 1.0	Precision : 0.5
+Epoch 10/10
+4/4 [==============================] - 70s 18s/step
+Loss : 0.7163009643554688	Recall : 1.0	Precision : 0.5
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Megawati_Sukarnoputri as anchor
+100%|██████████| 5749/5749 [00:17<00:00, 322.01it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 33/33 [00:01<00:00, 27.61it/s]
+Successfully generated 66 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 33/33 [00:00<00:00, 104.43it/s]
+Successfully generated 33 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	66
+Positive images availlable :	66
+Negative images availlable :	12560
+Tuple harvested :		66
+Labelling data
+Successfully harvested and labelled 66 data.
+Begining training 25th/100 person.
+Epoch 1/10
+3/3 [==============================] - 66s 24s/step
+Loss : 0.6964520812034607	Recall : 0.9200000166893005	Precision : 0.5227272510528564
+Epoch 2/10
+3/3 [==============================] - 60s 17s/step
+Loss : 0.6934896111488342	Recall : 0.7894737124443054	Precision : 0.375
+Epoch 3/10
+3/3 [==============================] - 60s 21s/step
+Loss : 0.6891100406646729	Recall : 0.800000011920929	Precision : 0.5128205418586731
+Epoch 4/10
+3/3 [==============================] - 63s 21s/step
+Loss : 0.6960894465446472	Recall : 0.9200000166893005	Precision : 0.5348837375640869
+Epoch 5/10
+3/3 [==============================] - 58s 20s/step
+Loss : 0.6894877552986145	Recall : 1.0	Precision : 0.52173912525177
+Epoch 6/10
+3/3 [==============================] - 64s 23s/step
+Loss : 0.6859419345855713	Recall : 1.0	Precision : 0.47826087474823
+Epoch 7/10
+3/3 [==============================] - 73s 24s/step
+Loss : 0.7017079591751099	Recall : 1.0	Precision : 0.44680851697921753
+Epoch 8/10
+3/3 [==============================] - 60s 19s/step
+Loss : 0.7000442743301392	Recall : 1.0	Precision : 0.44680851697921753
+Epoch 9/10
+3/3 [==============================] - 58s 17s/step
+Loss : 0.6931840181350708	Recall : 1.0	Precision : 0.4680851101875305
+Epoch 10/10
+3/3 [==============================] - 55s 17s/step
+Loss : 0.6545366048812866	Recall : 1.0	Precision : 0.5319148898124695
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Silvio_Berlusconi as anchor
+100%|██████████| 5749/5749 [00:17<00:00, 325.29it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 33/33 [00:00<00:00, 57.39it/s]
+Successfully generated 66 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 33/33 [00:00<00:00, 107.14it/s]
+Successfully generated 33 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	66
+Positive images availlable :	66
+Negative images availlable :	12560
+Tuple harvested :		66
+Labelling data
+Successfully harvested and labelled 66 data.
+Begining training 26th/100 person.
+Epoch 1/10
+3/3 [==============================] - 68s 23s/step
+Loss : 0.6920545101165771	Recall : 1.0	Precision : 0.4680851101875305
+Epoch 2/10
+3/3 [==============================] - 71s 23s/step
+Loss : 0.6872493624687195	Recall : 1.0	Precision : 0.5106382966041565
+Epoch 3/10
+3/3 [==============================] - 56s 17s/step
+Loss : 0.6942680478096008	Recall : 1.0	Precision : 0.4680851101875305
+Epoch 4/10
+3/3 [==============================] - 64s 23s/step
+Loss : 0.6918705105781555	Recall : 1.0	Precision : 0.4680851101875305
+Epoch 5/10
+3/3 [==============================] - 64s 21s/step
+Loss : 0.6968191862106323	Recall : 1.0	Precision : 0.4893617033958435
+Epoch 6/10
+3/3 [==============================] - 64s 23s/step
+Loss : 0.6907144784927368	Recall : 1.0	Precision : 0.5744680762290955
+Epoch 7/10
+3/3 [==============================] - 58s 17s/step
+Loss : 0.6933351159095764	Recall : 1.0	Precision : 0.5106382966041565
+Epoch 8/10
+3/3 [==============================] - 64s 19s/step
+Loss : 0.6935796141624451	Recall : 1.0	Precision : 0.38297873735427856
+Epoch 9/10
+3/3 [==============================] - 61s 21s/step
+Loss : 0.6916418671607971	Recall : 0.949999988079071	Precision : 0.5
+Epoch 10/10
+3/3 [==============================] - 59s 21s/step
+Loss : 0.6899288296699524	Recall : 0.692307710647583	Precision : 0.6428571343421936
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Tom_Ridge as anchor
+100%|██████████| 5749/5749 [00:17<00:00, 320.32it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 33/33 [00:00<00:00, 56.70it/s]
+Successfully generated 66 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 33/33 [00:00<00:00, 110.00it/s]
+Successfully generated 33 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	66
+Positive images availlable :	66
+Negative images availlable :	12560
+Tuple harvested :		66
+Labelling data
+Successfully harvested and labelled 66 data.
+Begining training 27th/100 person.
+Epoch 1/10
+3/3 [==============================] - 61s 21s/step
+Loss : 0.6884989142417908	Recall : 0.739130437374115	Precision : 0.5862069129943848
+Epoch 2/10
+3/3 [==============================] - 52s 17s/step
+Loss : 0.6827635169029236	Recall : 0.8695651888847351	Precision : 0.6666666865348816
+Epoch 3/10
+3/3 [==============================] - 52s 17s/step
+Loss : 0.6795982718467712	Recall : 0.6086956262588501	Precision : 0.7368420958518982
+Epoch 4/10
+3/3 [==============================] - 52s 17s/step
+Loss : 0.6863396763801575	Recall : 0.21739129722118378	Precision : 0.625
+Epoch 5/10
+3/3 [==============================] - 62s 21s/step
+Loss : 0.6682347059249878	Recall : 0.1538461595773697	Precision : 0.6666666865348816
+Epoch 6/10
+3/3 [==============================] - 52s 17s/step
+Loss : 0.6754969358444214	Recall : 0.0	Precision : 0.0
+Epoch 7/10
+3/3 [==============================] - 59s 20s/step
+Loss : 0.617502748966217	Recall : 0.0	Precision : 0.0
+Epoch 8/10
+3/3 [==============================] - 52s 17s/step
+Loss : 0.6292879581451416	Recall : 0.0476190485060215	Precision : 0.5
+Epoch 9/10
+3/3 [==============================] - 60s 21s/step
+Loss : 0.6730883121490479	Recall : 0.0	Precision : 0.0
+Epoch 10/10
+3/3 [==============================] - 64s 24s/step
+Loss : 0.6089764833450317	Recall : 0.0	Precision : 0.0
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Kofi_Annan as anchor
+100%|██████████| 5749/5749 [00:19<00:00, 299.82it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 32/32 [00:00<00:00, 56.34it/s]
+Successfully generated 64 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 32/32 [00:00<00:00, 106.66it/s]
+Successfully generated 32 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	64
+Positive images availlable :	64
+Negative images availlable :	12561
+Tuple harvested :		64
+Labelling data
+Successfully harvested and labelled 64 data.
+Begining training 28th/100 person.
+Epoch 1/10
+3/3 [==============================] - 71s 23s/step
+Loss : 0.6998955607414246	Recall : 0.0	Precision : 0.0
+Epoch 2/10
+3/3 [==============================] - 72s 23s/step
+Loss : 0.626771867275238	Recall : 0.0	Precision : 0.0
+Epoch 3/10
+3/3 [==============================] - 53s 17s/step
+Loss : 0.6725984811782837	Recall : 0.04545454680919647	Precision : 1.0
+Epoch 4/10
+3/3 [==============================] - 53s 17s/step
+Loss : 0.6866054534912109	Recall : 0.0	Precision : 0.0
+Epoch 5/10
+3/3 [==============================] - 50s 16s/step
+Loss : 0.5322047472000122	Recall : 0.0	Precision : 0.0
+Epoch 6/10
+3/3 [==============================] - 64s 23s/step
+Loss : 0.5485531687736511	Recall : 0.0	Precision : 0.0
+Epoch 7/10
+3/3 [==============================] - 68s 22s/step
+Loss : 0.59762042760849	Recall : 0.043478261679410934	Precision : 1.0
+Epoch 8/10
+3/3 [==============================] - 52s 17s/step
+Loss : 0.5514267683029175	Recall : 0.1428571492433548	Precision : 1.0
+Epoch 9/10
+3/3 [==============================] - 59s 17s/step
+Loss : 0.5542932748794556	Recall : 0.0	Precision : 0.0
+Epoch 10/10
+3/3 [==============================] - 58s 20s/step
+Loss : 0.7067864537239075	Recall : 0.0476190485060215	Precision : 1.0
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Roh_Moo-hyun as anchor
+100%|██████████| 5749/5749 [00:19<00:00, 296.51it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 32/32 [00:00<00:00, 50.95it/s]
+Successfully generated 64 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 32/32 [00:00<00:00, 100.31it/s]
+Successfully generated 32 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	64
+Positive images availlable :	64
+Negative images availlable :	12561
+Tuple harvested :		64
+Labelling data
+Successfully harvested and labelled 64 data.
+Begining training 29th/100 person.
+Epoch 1/10
+3/3 [==============================] - 63s 19s/step
+Loss : 0.675460696220398	Recall : 0.08695652335882187	Precision : 1.0
+Epoch 2/10
+3/3 [==============================] - 70s 22s/step
+Loss : 0.6642268896102905	Recall : 0.30434781312942505	Precision : 0.5
+Epoch 3/10
+3/3 [==============================] - 58s 20s/step
+Loss : 0.6812669038772583	Recall : 0.695652186870575	Precision : 0.5517241358757019
+Epoch 4/10
+3/3 [==============================] - 63s 22s/step
+Loss : 0.688494861125946	Recall : 0.6153846383094788	Precision : 0.6666666865348816
+Epoch 5/10
+3/3 [==============================] - 53s 17s/step
+Loss : 0.6872464418411255	Recall : 0.3499999940395355	Precision : 0.5384615659713745
+Epoch 6/10
+3/3 [==============================] - 55s 17s/step
+Loss : 0.6729072332382202	Recall : 0.1304347813129425	Precision : 0.75
+Epoch 7/10
+3/3 [==============================] - 60s 18s/step
+Loss : 0.6951825022697449	Recall : 0.03703703731298447	Precision : 0.5
+Epoch 8/10
+3/3 [==============================] - 65s 22s/step
+Loss : 0.5812332034111023	Recall : 0.043478261679410934	Precision : 0.5
+Epoch 9/10
+3/3 [==============================] - 56s 19s/step
+Loss : 0.5440572500228882	Recall : 0.05263157933950424	Precision : 1.0
+Epoch 10/10
+3/3 [==============================] - 51s 18s/step
+Loss : 0.6996150612831116	Recall : 0.03999999910593033	Precision : 1.0
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Vicente_Fox as anchor
+100%|██████████| 5749/5749 [00:18<00:00, 316.56it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 32/32 [00:00<00:00, 57.14it/s]
+Successfully generated 64 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 32/32 [00:00<00:00, 114.28it/s]
+Successfully generated 32 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	64
+Positive images availlable :	64
+Negative images availlable :	12561
+Tuple harvested :		64
+Labelling data
+Successfully harvested and labelled 64 data.
+Begining training 30th/100 person.
+Epoch 1/10
+3/3 [==============================] - 58s 19s/step
+Loss : 0.6831414103507996	Recall : 0.2916666567325592	Precision : 0.6363636255264282
+Epoch 2/10
+3/3 [==============================] - 52s 17s/step
+Loss : 0.687393844127655	Recall : 0.6666666865348816	Precision : 0.48275861144065857
+Epoch 3/10
+3/3 [==============================] - 51s 17s/step
+Loss : 0.6897954940795898	Recall : 0.699999988079071	Precision : 0.5
+Epoch 4/10
+3/3 [==============================] - 52s 17s/step
+Loss : 0.6942676901817322	Recall : 0.6000000238418579	Precision : 0.517241358757019
+Epoch 5/10
+3/3 [==============================] - 59s 17s/step
+Loss : 0.6904779076576233	Recall : 0.6521739363670349	Precision : 0.625
+Epoch 6/10
+3/3 [==============================] - 63s 20s/step
+Loss : 0.6964953541755676	Recall : 0.6363636255264282	Precision : 0.48275861144065857
+Epoch 7/10
+3/3 [==============================] - 52s 17s/step
+Loss : 0.6914923787117004	Recall : 0.6521739363670349	Precision : 0.5
+Epoch 8/10
+3/3 [==============================] - 59s 20s/step
+Loss : 0.6945165395736694	Recall : 0.550000011920929	Precision : 0.47826087474823
+Epoch 9/10
+3/3 [==============================] - 53s 18s/step
+Loss : 0.6958321928977966	Recall : 0.5	Precision : 0.6111111044883728
+Epoch 10/10
+3/3 [==============================] - 51s 17s/step
+Loss : 0.6979089379310608	Recall : 0.3478260934352875	Precision : 0.7272727489471436
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with David_Beckham as anchor
+100%|██████████| 5749/5749 [00:18<00:00, 304.37it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 31/31 [00:00<00:00, 59.62it/s]
+Successfully generated 62 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 31/31 [00:00<00:00, 106.52it/s]
+Successfully generated 31 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	62
+Positive images availlable :	62
+Negative images availlable :	12562
+Tuple harvested :		62
+Labelling data
+Successfully harvested and labelled 62 data.
+Begining training 31th/100 person.
+Epoch 1/10
+3/3 [==============================] - 49s 15s/step
+Loss : 0.6896944046020508	Recall : 0.20000000298023224	Precision : 0.5714285969734192
+Epoch 2/10
+3/3 [==============================] - 51s 16s/step
+Loss : 0.6929900050163269	Recall : 0.17391304671764374	Precision : 0.4444444477558136
+Epoch 3/10
+3/3 [==============================] - 61s 21s/step
+Loss : 0.6892838478088379	Recall : 0.375	Precision : 0.6000000238418579
+Epoch 4/10
+3/3 [==============================] - 65s 20s/step
+Loss : 0.6947358250617981	Recall : 0.5833333134651184	Precision : 0.6363636255264282
+Epoch 5/10
+3/3 [==============================] - 60s 22s/step
+Loss : 0.6913690567016602	Recall : 0.6363636255264282	Precision : 0.6363636255264282
+Epoch 6/10
+3/3 [==============================] - 54s 18s/step
+Loss : 0.6916200518608093	Recall : 0.52173912525177	Precision : 0.6000000238418579
+Epoch 7/10
+3/3 [==============================] - 49s 15s/step
+Loss : 0.6894094347953796	Recall : 0.47058823704719543	Precision : 0.4444444477558136
+Epoch 8/10
+3/3 [==============================] - 47s 15s/step
+Loss : 0.6850445866584778	Recall : 0.05882352963089943	Precision : 0.1111111119389534
+Epoch 9/10
+3/3 [==============================] - 46s 14s/step
+Loss : 0.6910789608955383	Recall : 0.27272728085517883	Precision : 0.75
+Epoch 10/10
+3/3 [==============================] - 45s 14s/step
+Loss : 0.6927271485328674	Recall : 0.3181818127632141	Precision : 0.5
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with John_Negroponte as anchor
+100%|██████████| 5749/5749 [00:17<00:00, 319.78it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 31/31 [00:00<00:00, 47.47it/s]
+Successfully generated 62 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 31/31 [00:00<00:00, 89.60it/s]
+Successfully generated 31 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	62
+Positive images availlable :	62
+Negative images availlable :	12562
+Tuple harvested :		62
+Labelling data
+Successfully harvested and labelled 62 data.
+Begining training 32th/100 person.
+Epoch 1/10
+3/3 [==============================] - 52s 17s/step
+Loss : 0.693897545337677	Recall : 0.4761904776096344	Precision : 0.5555555820465088
+Epoch 2/10
+3/3 [==============================] - 47s 14s/step
+Loss : 0.6904754638671875	Recall : 0.550000011920929	Precision : 0.7333333492279053
+Epoch 3/10
+3/3 [==============================] - 50s 16s/step
+Loss : 0.6758487224578857	Recall : 0.40909090638160706	Precision : 0.75
+Epoch 4/10
+3/3 [==============================] - 49s 14s/step
+Loss : 0.6854929327964783	Recall : 0.3684210479259491	Precision : 0.699999988079071
+Epoch 5/10
+3/3 [==============================] - 51s 16s/step
+Loss : 0.694591224193573	Recall : 0.27272728085517883	Precision : 1.0
+Epoch 6/10
+3/3 [==============================] - 52s 17s/step
+Loss : 0.7023411393165588	Recall : 0.2083333283662796	Precision : 0.8333333134651184
+Epoch 7/10
+3/3 [==============================] - 49s 16s/step
+Loss : 0.6963575482368469	Recall : 0.2380952388048172	Precision : 0.8333333134651184
+Epoch 8/10
+3/3 [==============================] - 55s 17s/step
+Loss : 0.6896560788154602	Recall : 0.1818181872367859	Precision : 1.0
+Epoch 9/10
+3/3 [==============================] - 53s 18s/step
+Loss : 0.7031671404838562	Recall : 0.22727273404598236	Precision : 0.8333333134651184
+Epoch 10/10
+3/3 [==============================] - 51s 17s/step
+Loss : 0.6740284562110901	Recall : 0.27272728085517883	Precision : 0.8571428656578064
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Guillermo_Coria as anchor
+100%|██████████| 5749/5749 [00:16<00:00, 339.33it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 30/30 [00:00<00:00, 67.72it/s]
+Successfully generated 60 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 30/30 [00:00<00:00, 126.58it/s]
+Successfully generated 30 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	60
+Positive images availlable :	60
+Negative images availlable :	12563
+Tuple harvested :		60
+Labelling data
+Successfully harvested and labelled 60 data.
+Begining training 33th/100 person.
+Epoch 1/10
+3/3 [==============================] - 53s 18s/step
+Loss : 0.7017834186553955	Recall : 0.0	Precision : 0.0
+Epoch 2/10
+3/3 [==============================] - 45s 14s/step
+Loss : 0.6591785550117493	Recall : 0.05263157933950424	Precision : 0.5
+Epoch 3/10
+3/3 [==============================] - 44s 14s/step
+Loss : 0.6754021048545837	Recall : 0.04545454680919647	Precision : 1.0
+Epoch 4/10
+3/3 [==============================] - 41s 13s/step
+Loss : 0.7038141489028931	Recall : 0.0	Precision : 0.0
+Epoch 5/10
+3/3 [==============================] - 41s 13s/step
+Loss : 0.6752325892448425	Recall : 0.0	Precision : 0.0
+Epoch 6/10
+3/3 [==============================] - 43s 13s/step
+Loss : 0.7114613652229309	Recall : 0.0	Precision : 0.0
+Epoch 7/10
+3/3 [==============================] - 42s 13s/step
+Loss : 0.6813730597496033	Recall : 0.04545454680919647	Precision : 1.0
+Epoch 8/10
+3/3 [==============================] - 41s 13s/step
+Loss : 0.6525940895080566	Recall : 0.0	Precision : 0.0
+Epoch 9/10
+3/3 [==============================] - 40s 13s/step
+Loss : 0.6655821204185486	Recall : 0.0476190485060215	Precision : 1.0
+Epoch 10/10
+3/3 [==============================] - 42s 13s/step
+Loss : 0.6526647806167603	Recall : 0.10000000149011612	Precision : 1.0
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Recep_Tayyip_Erdogan as anchor
+100%|██████████| 5749/5749 [00:15<00:00, 369.35it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 30/30 [00:00<00:00, 68.34it/s]
+Successfully generated 60 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 30/30 [00:00<00:00, 131.58it/s]
+Successfully generated 30 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	60
+Positive images availlable :	60
+Negative images availlable :	12563
+Tuple harvested :		60
+Labelling data
+Successfully harvested and labelled 60 data.
+Begining training 34th/100 person.
+Epoch 1/10
+3/3 [==============================] - 42s 13s/step
+Loss : 0.6800182461738586	Recall : 0.0476190485060215	Precision : 0.5
+Epoch 2/10
+3/3 [==============================] - 42s 13s/step
+Loss : 0.684227705001831	Recall : 0.05263157933950424	Precision : 0.5
+Epoch 3/10
+3/3 [==============================] - 42s 13s/step
+Loss : 0.6940621733665466	Recall : 0.08695652335882187	Precision : 0.6666666865348816
+Epoch 4/10
+3/3 [==============================] - 42s 13s/step
+Loss : 0.6578733921051025	Recall : 0.1304347813129425	Precision : 1.0
+Epoch 5/10
+3/3 [==============================] - 42s 13s/step
+Loss : 0.6382696628570557	Recall : 0.10526315867900848	Precision : 1.0
+Epoch 6/10
+3/3 [==============================] - 42s 13s/step
+Loss : 0.6554432511329651	Recall : 0.05263157933950424	Precision : 1.0
+Epoch 7/10
+3/3 [==============================] - 42s 13s/step
+Loss : 0.5965206623077393	Recall : 0.0555555559694767	Precision : 1.0
+Epoch 8/10
+3/3 [==============================] - 41s 13s/step
+Loss : 0.7254030704498291	Recall : 0.043478261679410934	Precision : 1.0
+Epoch 9/10
+3/3 [==============================] - 42s 13s/step
+Loss : 0.5793010592460632	Recall : 0.05263157933950424	Precision : 1.0
+Epoch 10/10
+3/3 [==============================] - 42s 13s/step
+Loss : 0.6983667016029358	Recall : 0.0	Precision : 0.0
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Bill_Clinton as anchor
+100%|██████████| 5749/5749 [00:17<00:00, 334.53it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 29/29 [00:00<00:00, 68.80it/s]
+Successfully generated 58 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 29/29 [00:00<00:00, 128.89it/s]
+Successfully generated 29 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	58
+Positive images availlable :	58
+Negative images availlable :	12564
+Tuple harvested :		58
+Labelling data
+Successfully harvested and labelled 58 data.
+Begining training 35th/100 person.
+Epoch 1/10
+3/3 [==============================] - 40s 12s/step
+Loss : 0.5900905132293701	Recall : 0.0	Precision : 0.0
+Epoch 2/10
+3/3 [==============================] - 39s 12s/step
+Loss : 0.7398766279220581	Recall : 0.0	Precision : 0.0
+Epoch 3/10
+3/3 [==============================] - 40s 12s/step
+Loss : 0.7687405943870544	Recall : 0.0	Precision : 0.0
+Epoch 4/10
+3/3 [==============================] - 39s 12s/step
+Loss : 0.7405742406845093	Recall : 0.08695652335882187	Precision : 0.6666666865348816
+Epoch 5/10
+3/3 [==============================] - 40s 12s/step
+Loss : 0.6789836287498474	Recall : 0.25	Precision : 1.0
+Epoch 6/10
+3/3 [==============================] - 40s 12s/step
+Loss : 0.7124972343444824	Recall : 0.15000000596046448	Precision : 0.75
+Epoch 7/10
+3/3 [==============================] - 40s 12s/step
+Loss : 0.6763561367988586	Recall : 0.1666666716337204	Precision : 0.6000000238418579
+Epoch 8/10
+3/3 [==============================] - 39s 12s/step
+Loss : 0.6608331203460693	Recall : 0.190476194024086	Precision : 0.6666666865348816
+Epoch 9/10
+3/3 [==============================] - 39s 12s/step
+Loss : 0.6696887612342834	Recall : 0.1666666716337204	Precision : 0.6000000238418579
+Epoch 10/10
+3/3 [==============================] - 40s 12s/step
+Loss : 0.7212837934494019	Recall : 0.190476194024086	Precision : 0.6666666865348816
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Mahmoud_Abbas as anchor
+100%|██████████| 5749/5749 [00:16<00:00, 343.00it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 29/29 [00:00<00:00, 67.92it/s]
+Successfully generated 58 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 29/29 [00:00<00:00, 114.62it/s]
+Successfully generated 29 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	58
+Positive images availlable :	58
+Negative images availlable :	12564
+Tuple harvested :		58
+Labelling data
+Successfully harvested and labelled 58 data.
+Begining training 36th/100 person.
+Epoch 1/10
+3/3 [==============================] - 39s 12s/step
+Loss : 0.6808243989944458	Recall : 0.10000000149011612	Precision : 1.0
+Epoch 2/10
+3/3 [==============================] - 40s 12s/step
+Loss : 0.6893198490142822	Recall : 0.05263157933950424	Precision : 1.0
+Epoch 3/10
+3/3 [==============================] - 40s 12s/step
+Loss : 0.713737964630127	Recall : 0.1428571492433548	Precision : 1.0
+Epoch 4/10
+3/3 [==============================] - 40s 12s/step
+Loss : 0.6802775859832764	Recall : 0.20000000298023224	Precision : 0.800000011920929
+Epoch 5/10
+3/3 [==============================] - 39s 12s/step
+Loss : 0.6808207035064697	Recall : 0.2631579041481018	Precision : 1.0
+Epoch 6/10
+3/3 [==============================] - 40s 12s/step
+Loss : 0.6767356991767883	Recall : 0.25	Precision : 0.8333333134651184
+Epoch 7/10
+3/3 [==============================] - 40s 12s/step
+Loss : 0.7680935263633728	Recall : 0.190476194024086	Precision : 1.0
+Epoch 8/10
+3/3 [==============================] - 39s 12s/step
+Loss : 0.7162576913833618	Recall : 0.1764705926179886	Precision : 1.0
+Epoch 9/10
+3/3 [==============================] - 40s 12s/step
+Loss : 0.6718260645866394	Recall : 0.2857142984867096	Precision : 0.8571428656578064
+Epoch 10/10
+3/3 [==============================] - 40s 12s/step
+Loss : 0.6896024942398071	Recall : 0.2380952388048172	Precision : 0.7142857313156128
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Jack_Straw as anchor
+100%|██████████| 5749/5749 [00:17<00:00, 334.72it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 28/28 [00:00<00:00, 67.31it/s]
+Successfully generated 56 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 28/28 [00:00<00:00, 127.27it/s]
+Successfully generated 28 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	56
+Positive images availlable :	56
+Negative images availlable :	12565
+Tuple harvested :		56
+Labelling data
+Successfully harvested and labelled 56 data.
+Begining training 37th/100 person.
+Epoch 1/10
+3/3 [==============================] - 39s 12s/step
+Loss : 0.6863940358161926	Recall : 0.1428571492433548	Precision : 0.75
+Epoch 2/10
+3/3 [==============================] - 38s 12s/step
+Loss : 0.6814175844192505	Recall : 0.05000000074505806	Precision : 0.25
+Epoch 3/10
+3/3 [==============================] - 39s 12s/step
+Loss : 0.6907256841659546	Recall : 0.15000000596046448	Precision : 0.6000000238418579
+Epoch 4/10
+3/3 [==============================] - 39s 12s/step
+Loss : 0.7036845684051514	Recall : 0.29411765933036804	Precision : 0.7142857313156128
+Epoch 5/10
+3/3 [==============================] - 38s 12s/step
+Loss : 0.7155318260192871	Recall : 0.20000000298023224	Precision : 0.800000011920929
+Epoch 6/10
+3/3 [==============================] - 39s 12s/step
+Loss : 0.6873291730880737	Recall : 0.15789473056793213	Precision : 0.75
+Epoch 7/10
+3/3 [==============================] - 39s 12s/step
+Loss : 0.6742813587188721	Recall : 0.15789473056793213	Precision : 0.6000000238418579
+Epoch 8/10
+3/3 [==============================] - 39s 12s/step
+Loss : 0.6715563535690308	Recall : 0.2857142984867096	Precision : 0.75
+Epoch 9/10
+3/3 [==============================] - 38s 12s/step
+Loss : 0.6723599433898926	Recall : 0.190476194024086	Precision : 0.800000011920929
+Epoch 10/10
+3/3 [==============================] - 39s 12s/step
+Loss : 0.65300053358078	Recall : 0.15789473056793213	Precision : 1.0
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Juan_Carlos_Ferrero as anchor
+100%|██████████| 5749/5749 [00:16<00:00, 347.71it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 28/28 [00:00<00:00, 49.38it/s]
+Successfully generated 56 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 28/28 [00:00<00:00, 128.44it/s]
+Successfully generated 28 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	56
+Positive images availlable :	56
+Negative images availlable :	12565
+Tuple harvested :		56
+Labelling data
+Successfully harvested and labelled 56 data.
+Begining training 38th/100 person.
+Epoch 1/10
+3/3 [==============================] - 39s 12s/step
+Loss : 0.7803833484649658	Recall : 0.095238097012043	Precision : 0.6666666865348816
+Epoch 2/10
+3/3 [==============================] - 39s 12s/step
+Loss : 0.6959490776062012	Recall : 0.1111111119389534	Precision : 0.6666666865348816
+Epoch 3/10
+3/3 [==============================] - 37s 11s/step
+Loss : 0.6999915242195129	Recall : 0.1111111119389534	Precision : 0.6666666865348816
+Epoch 4/10
+3/3 [==============================] - 38s 12s/step
+Loss : 0.6898559331893921	Recall : 0.3684210479259491	Precision : 0.5384615659713745
+Epoch 5/10
+3/3 [==============================] - 39s 12s/step
+Loss : 0.679542064666748	Recall : 0.29411765933036804	Precision : 0.5
+Epoch 6/10
+3/3 [==============================] - 38s 12s/step
+Loss : 0.689473032951355	Recall : 0.21052631735801697	Precision : 0.5714285969734192
+Epoch 7/10
+3/3 [==============================] - 39s 12s/step
+Loss : 0.6865898370742798	Recall : 0.22727273404598236	Precision : 0.7142857313156128
+Epoch 8/10
+3/3 [==============================] - 39s 11s/step
+Loss : 0.6884016990661621	Recall : 0.20000000298023224	Precision : 0.5714285969734192
+Epoch 9/10
+3/3 [==============================] - 39s 12s/step
+Loss : 0.6886172294616699	Recall : 0.27272728085517883	Precision : 0.75
+Epoch 10/10
+3/3 [==============================] - 39s 12s/step
+Loss : 0.698114275932312	Recall : 0.21052631735801697	Precision : 0.5714285969734192
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Ricardo_Lagos as anchor
+100%|██████████| 5749/5749 [00:14<00:00, 387.65it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 27/27 [00:00<00:00, 59.73it/s]
+Successfully generated 54 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 27/27 [00:00<00:00, 125.00it/s]
+Successfully generated 27 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	54
+Positive images availlable :	54
+Negative images availlable :	12566
+Tuple harvested :		54
+Labelling data
+Successfully harvested and labelled 54 data.
+Begining training 39th/100 person.
+Epoch 1/10
+3/3 [==============================] - 38s 11s/step
+Loss : 0.6956210136413574	Recall : 0.625	Precision : 0.625
+Epoch 2/10
+3/3 [==============================] - 37s 11s/step
+Loss : 0.71659916639328	Recall : 0.25	Precision : 0.8333333134651184
+Epoch 3/10
+3/3 [==============================] - 37s 11s/step
+Loss : 0.6803764700889587	Recall : 0.190476194024086	Precision : 0.6666666865348816
+Epoch 4/10
+3/3 [==============================] - 37s 11s/step
+Loss : 0.7100470066070557	Recall : 0.11764705926179886	Precision : 0.5
+Epoch 5/10
+3/3 [==============================] - 37s 11s/step
+Loss : 0.597642719745636	Recall : 0.10526315867900848	Precision : 0.6666666865348816
+Epoch 6/10
+3/3 [==============================] - 37s 11s/step
+Loss : 0.6393845081329346	Recall : 0.05263157933950424	Precision : 0.5
+Epoch 7/10
+3/3 [==============================] - 37s 11s/step
+Loss : 0.7543466687202454	Recall : 0.0	Precision : 0.0
+Epoch 8/10
+3/3 [==============================] - 37s 11s/step
+Loss : 0.6922979354858398	Recall : 0.25	Precision : 0.7142857313156128
+Epoch 9/10
+3/3 [==============================] - 37s 11s/step
+Loss : 0.6201974749565125	Recall : 0.375	Precision : 0.75
+Epoch 10/10
+3/3 [==============================] - 36s 11s/step
+Loss : 0.6243453025817871	Recall : 0.0555555559694767	Precision : 1.0
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Gray_Davis as anchor
+100%|██████████| 5749/5749 [00:16<00:00, 359.15it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 26/26 [00:00<00:00, 68.97it/s]
+Successfully generated 52 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 26/26 [00:00<00:00, 126.83it/s]
+Successfully generated 26 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	52
+Positive images availlable :	52
+Negative images availlable :	12567
+Tuple harvested :		52
+Labelling data
+Successfully harvested and labelled 52 data.
+Begining training 40th/100 person.
+Epoch 1/10
+3/3 [==============================] - 36s 10s/step
+Loss : 0.6556573510169983	Recall : 0.0	Precision : 0.0
+Epoch 2/10
+3/3 [==============================] - 36s 10s/step
+Loss : 0.698243260383606	Recall : 0.0	Precision : 0.0
+Epoch 3/10
+3/3 [==============================] - 36s 10s/step
+Loss : 0.6048774719238281	Recall : 0.0	Precision : 0.0
+Epoch 4/10
+3/3 [==============================] - 36s 10s/step
+Loss : 0.6588364243507385	Recall : 0.05000000074505806	Precision : 1.0
+Epoch 5/10
+3/3 [==============================] - 36s 10s/step
+Loss : 0.6075810194015503	Recall : 0.1666666716337204	Precision : 0.75
+Epoch 6/10
+3/3 [==============================] - 36s 10s/step
+Loss : 0.6503249406814575	Recall : 0.10526315867900848	Precision : 1.0
+Epoch 7/10
+3/3 [==============================] - 36s 10s/step
+Loss : 0.6761304140090942	Recall : 0.095238097012043	Precision : 0.6666666865348816
+Epoch 8/10
+3/3 [==============================] - 36s 10s/step
+Loss : 0.6620302200317383	Recall : 0.2222222238779068	Precision : 0.800000011920929
+Epoch 9/10
+3/3 [==============================] - 36s 10s/step
+Loss : 0.6056503057479858	Recall : 0.15000000596046448	Precision : 1.0
+Epoch 10/10
+3/3 [==============================] - 36s 10s/step
+Loss : 0.6331490278244019	Recall : 0.15789473056793213	Precision : 1.0
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Rudolph_Giuliani as anchor
+100%|██████████| 5749/5749 [00:17<00:00, 327.99it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 26/26 [00:00<00:00, 68.60it/s]
+Successfully generated 52 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 26/26 [00:00<00:00, 115.04it/s]
+Successfully generated 26 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	52
+Positive images availlable :	52
+Negative images availlable :	12567
+Tuple harvested :		52
+Labelling data
+Successfully harvested and labelled 52 data.
+Begining training 41th/100 person.
+Epoch 1/10
+3/3 [==============================] - 36s 10s/step
+Loss : 0.6436053514480591	Recall : 0.0	Precision : 0.0
+Epoch 2/10
+3/3 [==============================] - 36s 10s/step
+Loss : 0.5675768256187439	Recall : 0.1111111119389534	Precision : 1.0
+Epoch 3/10
+3/3 [==============================] - 36s 10s/step
+Loss : 0.8081341981887817	Recall : 0.1111111119389534	Precision : 0.6666666865348816
+Epoch 4/10
+3/3 [==============================] - 37s 10s/step
+Loss : 0.8477433323860168	Recall : 0.0	Precision : 0.0
+Epoch 5/10
+3/3 [==============================] - 36s 10s/step
+Loss : 0.604736864566803	Recall : 0.23529411852359772	Precision : 0.5714285969734192
+Epoch 6/10
+3/3 [==============================] - 36s 10s/step
+Loss : 0.7139117121696472	Recall : 0.1764705926179886	Precision : 0.75
+Epoch 7/10
+3/3 [==============================] - 35s 10s/step
+Loss : 0.684991717338562	Recall : 0.11764705926179886	Precision : 1.0
+Epoch 8/10
+3/3 [==============================] - 36s 10s/step
+Loss : 0.8329111337661743	Recall : 0.1111111119389534	Precision : 0.6666666865348816
+Epoch 9/10
+3/3 [==============================] - 36s 10s/step
+Loss : 0.6564452052116394	Recall : 0.3529411852359772	Precision : 0.6666666865348816
+Epoch 10/10
+3/3 [==============================] - 36s 10s/step
+Loss : 0.6864534616470337	Recall : 0.42105263471603394	Precision : 1.0
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Tom_Daschle as anchor
+100%|██████████| 5749/5749 [00:15<00:00, 371.32it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 25/25 [00:00<00:00, 70.03it/s]
+Successfully generated 50 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 25/25 [00:00<00:00, 54.95it/s] 
+Successfully generated 25 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	50
+Positive images availlable :	50
+Negative images availlable :	12568
+Tuple harvested :		50
+Labelling data
+Successfully harvested and labelled 50 data.
+Begining training 42th/100 person.
+Epoch 1/10
+3/3 [==============================] - 35s 9s/step
+Loss : 0.6920541524887085	Recall : 0.375	Precision : 0.75
+Epoch 2/10
+3/3 [==============================] - 35s 10s/step
+Loss : 0.6333454251289368	Recall : 0.10526315867900848	Precision : 1.0
+Epoch 3/10
+3/3 [==============================] - 35s 10s/step
+Loss : 0.7692477107048035	Recall : 0.05882352963089943	Precision : 1.0
+Epoch 4/10
+3/3 [==============================] - 34s 10s/step
+Loss : 0.5885146260261536	Recall : 0.10526315867900848	Precision : 1.0
+Epoch 5/10
+3/3 [==============================] - 35s 10s/step
+Loss : 0.6825501918792725	Recall : 0.10526315867900848	Precision : 1.0
+Epoch 6/10
+3/3 [==============================] - 35s 10s/step
+Loss : 0.6499527096748352	Recall : 0.1111111119389534	Precision : 1.0
+Epoch 7/10
+3/3 [==============================] - 35s 10s/step
+Loss : 0.596966028213501	Recall : 0.11764705926179886	Precision : 1.0
+Epoch 8/10
+3/3 [==============================] - 35s 10s/step
+Loss : 0.5855600833892822	Recall : 0.0	Precision : 0.0
+Epoch 9/10
+3/3 [==============================] - 35s 10s/step
+Loss : 0.6405629515647888	Recall : 0.0	Precision : 0.0
+Epoch 10/10
+3/3 [==============================] - 35s 10s/step
+Loss : 0.6318953037261963	Recall : 0.06666667014360428	Precision : 1.0
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Atal_Bihari_Vajpayee as anchor
+100%|██████████| 5749/5749 [00:16<00:00, 358.06it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 24/24 [00:00<00:00, 61.70it/s]
+Successfully generated 48 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 24/24 [00:00<00:00, 131.87it/s]
+Successfully generated 24 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	48
+Positive images availlable :	48
+Negative images availlable :	12569
+Tuple harvested :		48
+Labelling data
+Successfully harvested and labelled 48 data.
+Begining training 43th/100 person.
+Epoch 1/10
+3/3 [==============================] - 33s 9s/step
+Loss : 1.0037264823913574	Recall : 0.0	Precision : 0.0
+Epoch 2/10
+3/3 [==============================] - 34s 9s/step
+Loss : 0.7467331886291504	Recall : 0.1111111119389534	Precision : 0.6666666865348816
+Epoch 3/10
+3/3 [==============================] - 34s 9s/step
+Loss : 0.6926455497741699	Recall : 0.7368420958518982	Precision : 0.6363636255264282
+Epoch 4/10
+3/3 [==============================] - 33s 9s/step
+Loss : 0.6944937705993652	Recall : 0.9411764740943909	Precision : 0.5333333611488342
+Epoch 5/10
+3/3 [==============================] - 33s 9s/step
+Loss : 0.7079145908355713	Recall : 1.0	Precision : 0.6071428656578064
+Epoch 6/10
+3/3 [==============================] - 33s 9s/step
+Loss : 0.6827733516693115	Recall : 0.6000000238418579	Precision : 0.529411792755127
+Epoch 7/10
+3/3 [==============================] - 33s 9s/step
+Loss : 0.4663452208042145	Recall : 0.125	Precision : 0.4000000059604645
+Epoch 8/10
+3/3 [==============================] - 33s 9s/step
+Loss : 0.7059019804000854	Recall : 0.11764705926179886	Precision : 0.6666666865348816
+Epoch 9/10
+3/3 [==============================] - 33s 9s/step
+Loss : 0.6447113752365112	Recall : 0.23529411852359772	Precision : 0.5
+Epoch 10/10
+3/3 [==============================] - 33s 9s/step
+Loss : 0.7088134288787842	Recall : 0.25	Precision : 0.4444444477558136
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Jeremy_Greenstock as anchor
+100%|██████████| 5749/5749 [00:17<00:00, 328.44it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 24/24 [00:00<00:00, 62.02it/s]
+Successfully generated 48 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 24/24 [00:00<00:00, 123.07it/s]
+Successfully generated 24 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	48
+Positive images availlable :	48
+Negative images availlable :	12569
+Tuple harvested :		48
+Labelling data
+Successfully harvested and labelled 48 data.
+Begining training 44th/100 person.
+Epoch 1/10
+3/3 [==============================] - 34s 9s/step
+Loss : 0.6985306739807129	Recall : 0.3125	Precision : 0.38461539149284363
+Epoch 2/10
+3/3 [==============================] - 32s 9s/step
+Loss : 0.687250554561615	Recall : 0.5555555820465088	Precision : 0.4761904776096344
+Epoch 3/10
+3/3 [==============================] - 33s 9s/step
+Loss : 0.686254620552063	Recall : 0.761904776096344	Precision : 0.6153846383094788
+Epoch 4/10
+3/3 [==============================] - 33s 9s/step
+Loss : 0.6982263326644897	Recall : 0.7894737124443054	Precision : 0.5769230723381042
+Epoch 5/10
+3/3 [==============================] - 34s 9s/step
+Loss : 0.6890960931777954	Recall : 0.8235294222831726	Precision : 0.5185185074806213
+Epoch 6/10
+3/3 [==============================] - 34s 9s/step
+Loss : 0.6881508827209473	Recall : 0.7647058963775635	Precision : 0.5416666865348816
+Epoch 7/10
+3/3 [==============================] - 33s 9s/step
+Loss : 0.6839625239372253	Recall : 0.46666666865348816	Precision : 0.5833333134651184
+Epoch 8/10
+3/3 [==============================] - 34s 9s/step
+Loss : 0.6947348117828369	Recall : 0.30000001192092896	Precision : 0.8571428656578064
+Epoch 9/10
+3/3 [==============================] - 34s 9s/step
+Loss : 0.7041476964950562	Recall : 0.20000000298023224	Precision : 0.4285714328289032
+Epoch 10/10
+3/3 [==============================] - 33s 9s/step
+Loss : 0.6922136545181274	Recall : 0.46666666865348816	Precision : 0.6363636255264282
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Winona_Ryder as anchor
+100%|██████████| 5749/5749 [00:17<00:00, 325.46it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 24/24 [00:00<00:00, 61.86it/s]
+Successfully generated 48 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 24/24 [00:00<00:00, 123.07it/s]
+Successfully generated 24 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	48
+Positive images availlable :	48
+Negative images availlable :	12569
+Tuple harvested :		48
+Labelling data
+Successfully harvested and labelled 48 data.
+Begining training 45th/100 person.
+Epoch 1/10
+3/3 [==============================] - 33s 9s/step
+Loss : 0.6692371368408203	Recall : 0.23529411852359772	Precision : 0.5
+Epoch 2/10
+3/3 [==============================] - 32s 9s/step
+Loss : 0.7053589224815369	Recall : 0.1764705926179886	Precision : 0.5
+Epoch 3/10
+3/3 [==============================] - 34s 9s/step
+Loss : 0.6671653985977173	Recall : 0.3333333432674408	Precision : 0.6666666865348816
+Epoch 4/10
+3/3 [==============================] - 34s 9s/step
+Loss : 0.6804910898208618	Recall : 0.1764705926179886	Precision : 0.5
+Epoch 5/10
+3/3 [==============================] - 33s 9s/step
+Loss : 0.6971396207809448	Recall : 0.46666666865348816	Precision : 0.4375
+Epoch 6/10
+3/3 [==============================] - 33s 9s/step
+Loss : 0.686951220035553	Recall : 0.800000011920929	Precision : 0.6153846383094788
+Epoch 7/10
+3/3 [==============================] - 33s 9s/step
+Loss : 0.6904140710830688	Recall : 0.9285714030265808	Precision : 0.4193548262119293
+Epoch 8/10
+3/3 [==============================] - 33s 9s/step
+Loss : 0.6948671340942383	Recall : 0.9333333373069763	Precision : 0.4516128897666931
+Epoch 9/10
+3/3 [==============================] - 33s 9s/step
+Loss : 0.6904729604721069	Recall : 0.9375	Precision : 0.5
+Epoch 10/10
+3/3 [==============================] - 33s 9s/step
+Loss : 0.6985582113265991	Recall : 0.8947368264198303	Precision : 0.6296296119689941
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Jose_Maria_Aznar as anchor
+100%|██████████| 5749/5749 [00:15<00:00, 377.52it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 23/23 [00:00<00:00, 66.47it/s]
+Successfully generated 46 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 23/23 [00:00<00:00, 130.68it/s]
+Successfully generated 23 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	46
+Positive images availlable :	46
+Negative images availlable :	12570
+Tuple harvested :		46
+Labelling data
+Successfully harvested and labelled 46 data.
+Begining training 46th/100 person.
+Epoch 1/10
+3/3 [==============================] - 34s 9s/step
+Loss : 0.6849489808082581	Recall : 0.7894737124443054	Precision : 0.5769230723381042
+Epoch 2/10
+3/3 [==============================] - 36s 9s/step
+Loss : 0.7006331086158752	Recall : 0.8125	Precision : 0.4642857015132904
+Epoch 3/10
+3/3 [==============================] - 33s 9s/step
+Loss : 0.7019672989845276	Recall : 0.800000011920929	Precision : 0.5714285969734192
+Epoch 4/10
+3/3 [==============================] - 36s 9s/step
+Loss : 0.6830143928527832	Recall : 0.7142857313156128	Precision : 0.7142857313156128
+Epoch 5/10
+3/3 [==============================] - 39s 10s/step
+Loss : 0.6898521780967712	Recall : 0.7368420958518982	Precision : 0.699999988079071
+Epoch 6/10
+3/3 [==============================] - 39s 10s/step
+Loss : 0.6970345377922058	Recall : 0.7857142686843872	Precision : 0.550000011920929
+Epoch 7/10
+3/3 [==============================] - 42s 10s/step
+Loss : 0.7023522257804871	Recall : 0.6875	Precision : 0.5789473652839661
+Epoch 8/10
+3/3 [==============================] - 34s 8s/step
+Loss : 0.6872137784957886	Recall : 0.5714285969734192	Precision : 0.4444444477558136
+Epoch 9/10
+3/3 [==============================] - 32s 8s/step
+Loss : 0.6848230957984924	Recall : 0.6666666865348816	Precision : 0.5
+Epoch 10/10
+3/3 [==============================] - 31s 8s/step
+Loss : 0.6989440321922302	Recall : 0.7333333492279053	Precision : 0.42307692766189575
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Saddam_Hussein as anchor
+100%|██████████| 5749/5749 [00:16<00:00, 349.60it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 23/23 [00:00<00:00, 68.25it/s]
+Successfully generated 46 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 23/23 [00:00<00:00, 134.50it/s]
+Successfully generated 23 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	46
+Positive images availlable :	46
+Negative images availlable :	12570
+Tuple harvested :		46
+Labelling data
+Successfully harvested and labelled 46 data.
+Begining training 47th/100 person.
+Epoch 1/10
+3/3 [==============================] - 31s 8s/step
+Loss : 0.6738935708999634	Recall : 0.9375	Precision : 0.6521739363670349
+Epoch 2/10
+3/3 [==============================] - 31s 8s/step
+Loss : 0.6597715020179749	Recall : 0.9166666865348816	Precision : 0.5789473652839661
+Epoch 3/10
+3/3 [==============================] - 32s 8s/step
+Loss : 0.6534379720687866	Recall : 0.5625	Precision : 0.6428571343421936
+Epoch 4/10
+3/3 [==============================] - 31s 8s/step
+Loss : 0.697579562664032	Recall : 0.5	Precision : 0.800000011920929
+Epoch 5/10
+3/3 [==============================] - 31s 8s/step
+Loss : 0.6462677121162415	Recall : 0.375	Precision : 0.75
+Epoch 6/10
+3/3 [==============================] - 31s 8s/step
+Loss : 0.684916615486145	Recall : 0.4444444477558136	Precision : 0.8888888955116272
+Epoch 7/10
+3/3 [==============================] - 37s 11s/step
+Loss : 0.6528001427650452	Recall : 0.3571428656578064	Precision : 0.8333333134651184
+Epoch 8/10
+3/3 [==============================] - 52s 14s/step
+Loss : 0.6895514130592346	Recall : 0.3571428656578064	Precision : 1.0
+Epoch 9/10
+3/3 [==============================] - 45s 11s/step
+Loss : 0.6834644675254822	Recall : 0.1764705926179886	Precision : 1.0
+Epoch 10/10
+3/3 [==============================] - 35s 9s/step
+Loss : 0.6179419159889221	Recall : 0.23076923191547394	Precision : 1.0
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Tiger_Woods as anchor
+100%|██████████| 5749/5749 [00:19<00:00, 293.57it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 23/23 [00:00<00:00, 43.96it/s]
+Successfully generated 46 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 23/23 [00:00<00:00, 82.51it/s]
+Successfully generated 23 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	46
+Positive images availlable :	46
+Negative images availlable :	12570
+Tuple harvested :		46
+Labelling data
+Successfully harvested and labelled 46 data.
+Begining training 48th/100 person.
+Epoch 1/10
+3/3 [==============================] - 34s 9s/step
+Loss : 0.8246641755104065	Recall : 0.1764705926179886	Precision : 1.0
+Epoch 2/10
+3/3 [==============================] - 36s 10s/step
+Loss : 0.6362720131874084	Recall : 0.11764705926179886	Precision : 0.6666666865348816
+Epoch 3/10
+3/3 [==============================] - 35s 9s/step
+Loss : 0.7329133749008179	Recall : 0.1764705926179886	Precision : 1.0
+Epoch 4/10
+3/3 [==============================] - 45s 11s/step
+Loss : 0.654386043548584	Recall : 0.2142857164144516	Precision : 0.75
+Epoch 5/10
+3/3 [==============================] - 32s 8s/step
+Loss : 0.7593899965286255	Recall : 0.13333334028720856	Precision : 0.6666666865348816
+Epoch 6/10
+3/3 [==============================] - 32s 8s/step
+Loss : 0.6904621124267578	Recall : 0.0625	Precision : 0.5
+Epoch 7/10
+3/3 [==============================] - 33s 9s/step
+Loss : 0.6362350583076477	Recall : 0.2857142984867096	Precision : 1.0
+Epoch 8/10
+3/3 [==============================] - 33s 9s/step
+Loss : 0.8489506840705872	Recall : 0.13333334028720856	Precision : 0.6666666865348816
+Epoch 9/10
+3/3 [==============================] - 32s 9s/step
+Loss : 0.6770160794258118	Recall : 0.46666666865348816	Precision : 0.875
+Epoch 10/10
+3/3 [==============================] - 32s 8s/step
+Loss : 0.6402623653411865	Recall : 0.38461539149284363	Precision : 0.7142857313156128
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with George_Robertson as anchor
+100%|██████████| 5749/5749 [00:16<00:00, 350.42it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 22/22 [00:00<00:00, 35.78it/s]
+Successfully generated 44 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 22/22 [00:00<00:00, 117.71it/s]
+Successfully generated 22 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	44
+Positive images availlable :	44
+Negative images availlable :	12571
+Tuple harvested :		44
+Labelling data
+Successfully harvested and labelled 44 data.
+Begining training 49th/100 person.
+Epoch 1/10
+2/2 [==============================] - 32s 15s/step
+Loss : 0.6686027646064758	Recall : 0.13333334028720856	Precision : 0.5
+Epoch 2/10
+2/2 [==============================] - 30s 14s/step
+Loss : 0.6873250603675842	Recall : 0.38461539149284363	Precision : 0.7142857313156128
+Epoch 3/10
+2/2 [==============================] - 31s 15s/step
+Loss : 0.6663182973861694	Recall : 0.23076923191547394	Precision : 0.5
+Epoch 4/10
+2/2 [==============================] - 33s 15s/step
+Loss : 0.6949338316917419	Recall : 0.31578946113586426	Precision : 0.75
+Epoch 5/10
+2/2 [==============================] - 35s 18s/step
+Loss : 0.6806662082672119	Recall : 0.3888888955116272	Precision : 0.699999988079071
+Epoch 6/10
+2/2 [==============================] - 32s 15s/step
+Loss : 0.6876697540283203	Recall : 0.5333333611488342	Precision : 0.6666666865348816
+Epoch 7/10
+2/2 [==============================] - 30s 15s/step
+Loss : 0.6850929260253906	Recall : 0.23529411852359772	Precision : 0.6666666865348816
+Epoch 8/10
+2/2 [==============================] - 30s 15s/step
+Loss : 0.6745424866676331	Recall : 0.5	Precision : 0.699999988079071
+Epoch 9/10
+2/2 [==============================] - 33s 16s/step
+Loss : 0.6528640985488892	Recall : 0.23076923191547394	Precision : 0.5
+Epoch 10/10
+2/2 [==============================] - 33s 16s/step
+Loss : 0.6541613936424255	Recall : 0.2857142984867096	Precision : 0.800000011920929
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.
+Generating data variant with Hamid_Karzai as anchor
+100%|██████████| 5749/5749 [00:28<00:00, 199.69it/s]
+[DEBUG] Finished data variant setup
+Preparing data augmentation from data\var_anchor to data\var_positive.
+100%|██████████| 22/22 [00:00<00:00, 59.20it/s]
+Successfully generated 44 new images through data augmentation.
+Preparing data augmentation from data\var_anchor to data\var_anchor.
+100%|██████████| 22/22 [00:00<00:00, 121.69it/s]
+Successfully generated 22 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\var_positive and negative data\var_negative folder.
+Anchor images availlable :	44
+Positive images availlable :	44
+Negative images availlable :	12571
+Tuple harvested :		44
+Labelling data
+Successfully harvested and labelled 44 data.
+Begining training 50th/100 person.
+Epoch 1/10
+2/2 [==============================] - 32s 16s/step
+Loss : 0.6574815511703491	Recall : 0.13333334028720856	Precision : 0.6666666865348816
+Epoch 2/10
+2/2 [==============================] - 29s 14s/step
+Loss : 0.7026925683021545	Recall : 0.0	Precision : 0.0
+Epoch 3/10
+2/2 [==============================] - 34s 19s/step
+Loss : 0.6473826169967651	Recall : 0.1764705926179886	Precision : 1.0
+Epoch 4/10
+2/2 [==============================] - 39s 16s/step
+Loss : 0.6978237628936768	Recall : 0.25	Precision : 1.0
+Epoch 5/10
+2/2 [==============================] - 31s 15s/step
+Loss : 0.6762456297874451	Recall : 0.1666666716337204	Precision : 0.6666666865348816
+Epoch 6/10
+2/2 [==============================] - 33s 16s/step
+Loss : 0.6550273299217224	Recall : 0.20000000298023224	Precision : 0.75
+Epoch 7/10
+2/2 [==============================] - 37s 19s/step
+Loss : 0.6969872713088989	Recall : 0.1428571492433548	Precision : 1.0
+Epoch 8/10
+2/2 [==============================] - 37s 17s/step
+Loss : 0.6916139125823975	Recall : 0.0625	Precision : 1.0
+Epoch 9/10
+2/2 [==============================] - 34s 15s/step
+Loss : 0.6760886311531067	Recall : 0.2857142984867096	Precision : 0.800000011920929
+Epoch 10/10
+2/2 [==============================] - 33s 15s/step
+Loss : 0.7143558263778687	Recall : 0.38461539149284363	Precision : 0.8333333134651184
+Training complete, saving embedding kernel.
+Successfully saved model at saved_model\embedding_kernel.h5.

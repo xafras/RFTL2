@@ -1,0 +1,19 @@
+---------------------------------------------------------------------------------------------------
+file_name       naive_siamese_model_George_B.h5
+max_harvest     530
+time trained    1m16s
+---------------------------------------------------------------------------------------------------
+Successfully created siamese model from pretrained kernel.
+Harvesting data from anchor data\benchmark_anchor, positive data\benchmark_positive and negative data\negative folder.
+Anchor images availlable :	530
+Positive images availlable :	530
+Negative images availlable :	13233
+Tuple harvested :		100
+Labelling data
+Successfully harvested and labelled 100 data.
+Begining transfert learning.
+Epoch 1/1
+5/5 [==============================] - 74s 14s/step
+Loss : 0.7035729289054871	Recall : 0.9032257795333862	Precision : 0.7179487347602844
+Transfert training complete, saving transfered siamese model.
+Successfully saved model at saved_model\naive_siamese_model_George_C.h5.

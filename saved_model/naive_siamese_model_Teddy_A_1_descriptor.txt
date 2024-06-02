@@ -1,0 +1,24 @@
+---------------------------------------------------------------------------------------------------
+file_name       naive_siamese_model_Teddy_A_1.h5
+max_harvest     100
+time trained    1m8s
+---------------------------------------------------------------------------------------------------
+Successfully created siamese model from pretrained kernel.
+Preparing data augmentation from data\anchor to data\positive.
+100%|██████████| 25/25 [00:00<00:00, 30.96it/s]
+Successfully generated 100 new images through data augmentation.
+Preparing data augmentation from data\anchor to data\var_anchor.
+100%|██████████| 25/25 [00:00<00:00, 49.35it/s]
+Successfully generated 75 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\positive and negative data\negative folder.
+Anchor images availlable :	100
+Positive images availlable :	100
+Negative images availlable :	13233
+Tuple harvested :		100
+Labelling data
+Successfully harvested and labelled 100 data.
+Begining transfert learning.
+Epoch 1/1
+5/5 [==============================] - 69s 13s/step
+Loss : 0.7017000913619995	Recall : 0.03333333507180214	Precision : 1.0
+Transfert training complete, saving transfered siamese model.

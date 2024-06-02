@@ -647,7 +647,7 @@ def plot_confusion_under_threshold(data_path, min=0, max=1, n_bit=100):
 
 
 def plot_roc(data_path_list, min=0, max=1, n_bit=100):
-    cols = ['tab:blue', 'tab:blue', 'tab:orange', 'tab:orange', 'tab:green', 'tab:green', 'tab:red', 'tab:red', 'tab:cyan', 'tab:cyan']
+    cols = ['tab:blue', 'tab:blue', 'tab:orange', 'tab:orange', 'tab:green', 'tab:green', 'tab:red', 'tab:red', 'tab:cyan', 'tab:cyan', 'tab:purple', 'tab:purple']
     k = -1
     plt.figure(figsize=(6,6))
     for data_path in data_path_list:

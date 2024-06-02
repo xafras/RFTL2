@@ -1,0 +1,46 @@
+---------------------------------------------------------------------------------------------------
+file_name       pretrained_siamese_model_George_A.h5
+max_harvest     530
+time trained    58m55s
+---------------------------------------------------------------------------------------------------""")
+Successfully created siamese model from pretrained kernel.
+Harvesting data from anchor data\benchmark_anchor, positive data\benchmark_positive and negative data\negative folder.
+Anchor images availlable :	530
+Positive images availlable :	530
+Negative images availlable :	13233
+Tuple harvested :		530
+Labelling data
+Successfully harvested and labelled 530 data.
+Begining transfert learning.
+Epoch 1/10
+24/24 [==============================] - 356s 15s/step
+Loss : 0.6918261051177979	Recall : 0.9591836929321289	Precision : 0.540229856967926
+Epoch 2/10
+24/24 [==============================] - 351s 15s/step
+Loss : 0.6934240460395813	Recall : 0.9780219793319702	Precision : 0.4863387942314148
+Epoch 3/10
+24/24 [==============================] - 354s 15s/step
+Loss : 0.6926043033599854	Recall : 0.771276593208313	Precision : 0.5534350872039795
+Epoch 4/10
+24/24 [==============================] - 354s 15s/step
+Loss : 0.6873710751533508	Recall : 0.4127906858921051	Precision : 0.4701986610889435
+Epoch 5/10
+24/24 [==============================] - 352s 15s/step
+Loss : 0.7126738429069519	Recall : 0.0	Precision : 0.0
+Epoch 6/10
+24/24 [==============================] - 350s 15s/step
+Loss : 0.6928372383117676	Recall : 0.02857142873108387	Precision : 1.0
+Epoch 7/10
+24/24 [==============================] - 353s 15s/step
+Loss : 0.7027437090873718	Recall : 0.04371584579348564	Precision : 0.6666666865348816
+Epoch 8/10
+24/24 [==============================] - 355s 15s/step
+Loss : 0.7860031127929688	Recall : 0.005524862091988325	Precision : 1.0
+Epoch 9/10
+24/24 [==============================] - 354s 15s/step
+Loss : 0.6975386738777161	Recall : 0.33862432837486267	Precision : 0.5614035129547119
+Epoch 10/10
+24/24 [==============================] - 355s 15s/step
+Loss : 0.6998181939125061	Recall : 0.054347824305295944	Precision : 0.9090909361839294
+Transfert training complete, saving transfered siamese model.
+Successfully saved model at saved_model\pretrained_siamese_model_George.h5.

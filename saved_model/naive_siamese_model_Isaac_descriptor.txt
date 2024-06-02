@@ -1,0 +1,51 @@
+---------------------------------------------------------------------------------------------------
+file_name       naive_siamese_model_Isaac.h5
+max_harvest     100
+time trained    13m15s
+---------------------------------------------------------------------------------------------------
+Successfully created siamese model from pretrained kernel.
+Preparing data augmentation from data\anchor to data\positive.
+100%|██████████| 25/25 [00:00<00:00, 27.02it/s]
+Successfully generated 100 new images through data augmentation.
+Preparing data augmentation from data\anchor to data\var_anchor.
+100%|██████████| 25/25 [00:00<00:00, 36.52it/s]
+Successfully generated 75 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\positive and negative data\negative folder.
+Anchor images availlable :	100
+Positive images availlable :	100
+Negative images availlable :	13233
+Tuple harvested :		100
+Labelling data
+Successfully harvested and labelled 100 data.
+Begining transfert learning.
+Epoch 1/10
+5/5 [==============================] - 73s 14s/step
+Loss : 0.642720103263855	Recall : 0.1875	Precision : 1.0
+Epoch 2/10
+5/5 [==============================] - 70s 14s/step
+Loss : 0.5168119072914124	Recall : 0.02777777798473835	Precision : 1.0
+Epoch 3/10
+5/5 [==============================] - 80s 16s/step
+Loss : 0.4808371067047119	Recall : 0.20588235557079315	Precision : 1.0
+Epoch 4/10
+5/5 [==============================] - 88s 16s/step
+Loss : 0.2083292454481125	Recall : 0.35483869910240173	Precision : 1.0
+Epoch 5/10
+5/5 [==============================] - 73s 14s/step
+Loss : 0.4613579213619232	Recall : 0.8461538553237915	Precision : 1.0
+Epoch 6/10
+5/5 [==============================] - 73s 14s/step
+Loss : 0.33491793274879456	Recall : 0.7941176295280457	Precision : 1.0
+Epoch 7/10
+5/5 [==============================] - 82s 16s/step
+Loss : 0.24339659512043	Recall : 0.9729729890823364	Precision : 0.9729729890823364
+Epoch 8/10
+5/5 [==============================] - 99s 19s/step
+Loss : 0.06396656483411789	Recall : 0.970588207244873	Precision : 1.0
+Epoch 9/10
+5/5 [==============================] - 87s 16s/step
+Loss : 0.3954446017742157	Recall : 1.0	Precision : 1.0
+Epoch 10/10
+5/5 [==============================] - 71s 14s/step
+Loss : 0.08975663036108017	Recall : 0.8684210777282715	Precision : 1.0
+Transfert training complete, saving transfered siamese model.

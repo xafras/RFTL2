@@ -1,0 +1,25 @@
+---------------------------------------------------------------------------------------------------
+file_name       pretrained_siamese_model_George_Georgeless_kernel_B_1.h5
+max_harvest     100
+time trained    2m21
+---------------------------------------------------------------------------------------------------
+Successfully created siamese model from pretrained kernel.
+Preparing data augmentation from data\anchor to data\var_anchor.
+100%|██████████| 530/530 [00:13<00:00, 40.57it/s]
+Successfully generated 1590 new images through data augmentation.
+Preparing data augmentation from data\anchor to data\positive.
+100%|██████████| 530/530 [00:14<00:00, 36.78it/s]
+Successfully generated 2120 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\positive and negative data\negative folder.
+Anchor images availlable :	2120
+Positive images availlable :	2120
+Negative images availlable :	13233
+Tuple harvested :		200
+Labelling data
+Successfully harvested and labelled 200 data.
+Begining transfert learning.
+Epoch 1/1
+9/9 [==============================] - 141s 15s/step
+Loss : 0.6931614279747009	Recall : 0.0	Precision : 0.0
+Transfert training complete, saving transfered siamese model.
+Successfully saved model at saved_model\pretrained_siamese_model_George_Georgeless_kernel_B_1.h5.

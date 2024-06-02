@@ -2,5 +2,8 @@ __pycache__
 .venv
 data
 lfw
-saved_model
+saved_model/old
+saved_model/*.h5
 .structure_generator
+George_W_Bush
+Teddy

@@ -1,0 +1,36 @@
+---------------------------------------------------------------------------------------------------
+file_name       naive_siamese_model_Teddy_A_1.h5
+max_harvest     100
+time trained    
+---------------------------------------------------------------------------------------------------
+Successfully created siamese model from pretrained kernel.
+Preparing data augmentation from data\anchor to data\positive.
+100%|██████████| 25/25 [00:00<00:00, 37.94it/s]
+Successfully generated 100 new images through data augmentation.
+Preparing data augmentation from data\anchor to data\var_anchor.
+100%|██████████| 25/25 [00:00<00:00, 44.72it/s]
+Successfully generated 75 new images through data augmentation.
+Harvesting data from anchor data\var_anchor, positive data\positive and negative data\negative folder.
+Anchor images availlable :	100
+Positive images availlable :	100
+Negative images availlable :	13233
+Tuple harvested :		100
+Labelling data
+Successfully harvested and labelled 100 data.
+Begining transfert learning.
+Epoch 1/5
+5/5 [==============================] - 72s 14s/step
+Loss : 0.5977063179016113	Recall : 0.20000000298023224	Precision : 1.0
+Epoch 2/5
+5/5 [==============================] - 70s 13s/step
+Loss : 0.36936426162719727	Recall : 0.4166666567325592	Precision : 1.0
+Epoch 3/5
+5/5 [==============================] - 71s 14s/step
+Loss : 0.33647868037223816	Recall : 0.7428571581840515	Precision : 1.0
+Epoch 4/5
+5/5 [==============================] - 71s 14s/step
+Loss : 0.17784877121448517	Recall : 0.8285714387893677	Precision : 1.0
+Epoch 5/5
+5/5 [==============================] - 77s 15s/step
+Loss : 0.1809639036655426	Recall : 0.9142857193946838	Precision : 0.9411764740943909
+Transfert training complete, saving transfered siamese model.

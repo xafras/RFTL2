@@ -1,0 +1,18 @@
+---------------------------------------------------------------------------------------------------
+file_name       pretrained_siamese_model_George_B.h5
+max_harvest     530
+time trained    1m12s
+---------------------------------------------------------------------------------------------------
+siamese_model = make_siamese_model(make_embedding())
+
+train_step = define_train_step(siamese_model)
+train = define_training_loop(siamese_model, train_step)
+print(f"Successfully created siamese model from pretrained kernel.")
+
+data = harvest_from_folder(anc_path=BANC_PATH, pos_path=BPOS_PATH, neg_path=NEG_PATH, n_harvest = max_harvest)
+train_data, test_data = build_dataloader_pipeline(data, max_data_size = max_harvest)
+
+print(f"Begining transfert learning.")
+train(train_data, n_epoch=1)
+print(f"Transfert training complete, saving transfered siamese model.")
+save_model(siamese_model, file_name='naive_siamese_model_George_C')
